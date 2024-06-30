@@ -15,6 +15,8 @@
     />
     <!-- main css  -->
     <link rel="stylesheet" href="details.css" />
+
+    <!-- internal style  -->
     <style>
       .image {
         background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85425605cae11f20d46181_denisse-leon-J7CjWufjmg4-unsplash.jpg")
@@ -24,33 +26,42 @@
         border-radius: 0.3125rem;
         text-align: right;
         position: relative;
-        
       }
       .image span {
         background-color: #eb5757;
         color: white;
-        padding: 8px 20px ;
+        padding: 8px 20px;
         position: absolute;
         top: 5%;
         right: 5%;
         border-radius: 0.3125rem;
         font-size: 1rem;
-        
+      }
+      @media (max-width: 768px) {
+        .white-tent {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        .white-tent .image {
+          width: auto;
+          height: 21.875rem;
+          background-size: cover;
+        }
       }
     </style>
   </head>
   <body>
     <header>
       <div class="container text-tent">
-        <h2>Blue Canvas Pack</h2>
+        <h1>Blue Canvas Pack</h1>
       </div>
     </header>
     <section class="container white-tent content-section">
-      <!-- <img src="https://assets.website-files.com/5e853c3383474026e43f2c78/5e8542c1248e59128e08e3e9_ryan-holloway-JyDmUaXMib4-unsplash.jpg" alt="">   -->
+      <!-- left side for image -->
       <div class="image">
         <span>SALE</span>
       </div>
-
+      <!-- right side for content or context. -->
       <div class="content-tent">
         <h2>Blue Canvas Pack</h2>
         <p>

@@ -1,77 +1,22 @@
+# Project Enhancement
 
-# E-commerce Website
+### Common Branch
 
-Welcome to our E-commerce project This website is designed to offer a seamless online shopping experience, featuring various sections such as Home, Contact, About, Shop, Announcements, and Donations. Our aim is to create an intuitive and user-friendly platform for customers to browse and purchase products effortlessly.
+**Purpose and Usage**
 
-## Project Overview 
+We created this branch to store common elements that are used on every page of the website. Each team member works on different pages, but some parts, like navigation links, need to be the same on all pages.
 
+When a member finishes their page and needs to add links to other pages (like from the Home page to the Contact or Shop pages), they can use the common elements from this branch to keep everything consistent.
 
-This project is developed by Group 2 of Group E, consisting of the following members:
+Using this common branch helps us:
+- Keep navigation links and other shared parts the same on all pages.
+- Let team members add their pages without missing important links.
+- Keep our code organized and easy to manage.
 
-```bash
-1. Abdirahman Mohamud  
+This way, each member can work on their pages independently, while shared elements stay uniform and up-to-date.
 
-2. Bashiir Daahir 
+### Started Code massages from here.
+**Added Item Links and Background Images**
 
-3. Nafisa Mohamed 
-```
-## Website Sections
-
-- Home: The landing page that provides an overview of our website and its features.
-- Contact: A page where users can reach out to us for any inquiries or support.
-- About: Information about our team and the mission of our project.
-- Shop: The main section where users can browse and purchase a variety of products. It includes subpages for product details and prices.
-- Announcements: Updates and news related to our website and products.
-- Donations: A page where users can contribute to support our project and its initiatives. It includes subpages providing additional information on how donations are used.
-
-## Features
-
-- Browse products by category 
-
-- View product details and prices
-
-- Make donations with detailed information
-
-- Contact form for inquiries
-
-- Regular announcements and updates
-
-
-
-## FAQ
-
-#### Question 1: How can I browse products on the website?
-
-A:  Visit the "Shop" section to explore our range of products categorized for easy browsing.
-
-#### Question 1: How can I contact customer support?
-A: Use the "Contact" section to reach out to us with any questions or issues you have.
-
-#### Question 1: How can I contact customer support?
-A: Use the "Contact" section to reach out to us with any questions or issues you have.
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary    Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #000000 |
-| Secondary  Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #000000 |
-| Background Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #000000 |
-| Text       Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #000000 |
-
-
-## Acknowledgements
-
- - will be update soon.
-
-
-## Tech Used
-
-**Frontend:** HTML, CSS, JavaScript
-## Deployment
-
-To deploy this project run
-
-```bash
-(At this time  this project is not deployed. Instructions for deployment will be provided in future updates.)
-```
-
+I add links to items on the Home page using a single CSS file for three HTML files. **I faced a challenge with using different pictures as background images for each item.** Since a single CSS file can only handle one background image per selector so  I resolved this issue by using internal CSS in each HTML file specifically for the background images. This allows the common styles  *h1, h2, p, links and others.* to remain in the external CSS file.
+I also use Font Awesome for icons including the Twitter icon.
