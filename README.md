@@ -28,3 +28,7 @@ I found another way to handle the background images. Using the main CSS file `de
 ### Responsive Design
 
 I also made each page responsive so they look good on different devices and screen sizes.
+
+## step 3
+### wxaan kusoodaray header iyo footerkii iyo waliba responsivekoodii
+wxaan istimaala kalarada **#eb5757** , **f9f9f9** ,**#222**
