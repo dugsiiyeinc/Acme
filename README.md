@@ -8,6 +8,7 @@ Welcome to our E-commerce project This website is designed to offer a seamless o
 
 This project is developed by Group 2 of Group E, consisting of the following members:
 
+- `Hanad Mohamed Dahir` - Coordinating the project and managing the team.
 ```bash
 1. Abdirahman Mohamud  
 
