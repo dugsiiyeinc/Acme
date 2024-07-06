@@ -1,4 +1,3 @@
-
 # E-commerce Website
 
 Welcome to our E-commerce project This website is designed to offer a seamless online shopping experience, featuring various sections such as Home, Contact, About, Shop, Announcements, and Donations. Our aim is to create an intuitive and user-friendly platform for customers to browse and purchase products effortlessly.
@@ -75,4 +74,5 @@ To deploy this project run
 ```bash
 (At this time  this project is not deployed. Instructions for deployment will be provided in future updates.)
 ```
+
 
