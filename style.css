@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -668,3 +669,60 @@ Line-Height:24px;
         border-radius: 4px;
     }
 }
+=======
+.container{	
+	 background: black;
+	 height: 4.5rem;
+}
+
+.main-container{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+.primary-elert{
+	background-color: #EB5757;
+	border-radius: 20px;
+	padding: 5px 20px;
+	size: 16px;
+	line-height: 24px;
+	weigtht: 400;
+	margin: 10px;
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+	background-color: #EB5757;
+	size: 16px;
+	line-height: 24px;
+	weight: 400;
+}
+ 
+ .navbar .menus-navbar{
+ 	text-decoration: none;
+ }
+
+
+.contant{
+
+ background: black;
+	 height: 4.5rem;
+	 color: #FFFFFF;
+	size: 38px;
+	weight: 700;
+	line-height: 44px;
+padding: 5px;
+
+}
+
+ .footer{
+ 	background-color: black;
+ 	height: 4.5rem;
+ }
+  
+
+>>>>>>> contact
