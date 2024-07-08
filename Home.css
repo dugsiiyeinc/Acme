@@ -200,11 +200,7 @@ img{
 /* end text-covid19 */
 
 /* start-cards */
-.card-covid{
-    height: 70vh;
-    /* position: relative; */
-    margin-top: 1rem;
-}
+
 
 .card{
     display: grid;
@@ -283,10 +279,12 @@ Line-Height:24px;
 
 /* star-products */
 .section-product{
-    height: 60vh;
-    margin-top: 5rem;
+
+    margin-top: 3rem;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .section-product .text p{
@@ -295,8 +293,11 @@ Line-Height:24px;
     line-height: 24px;
     color: rgb(51, 51, 51);
     font-family:Sen, sans-serif;
-}
 
+}
+.section-product .text {
+    margin-bottom: 3rem;
+}
 .section-product .text h3{
     font-size: 40px;
     line-height: 48px;
@@ -308,32 +309,30 @@ Line-Height:24px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
-    margin: 0px 11px;
-    margin-top: 2rem;
-    z-index: -1111;
-    position: relative;
+    /* margin: 0px 11px; */
+    /* margin-top: 2rem; */
+    /* z-index: -1111; */
+    /* position: relative; */
 }
-
+.product-1 .common-imgs {
+    width: 23.6875rem;
+    height: 31.25rem;
+    border-radius: 0.625rem;
+}
 .product-1 .img-1{
-    width: 379px;
-    height: 500px;
+  
     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e856e41c718420c18dd6751_patrick-hendry-eDgUyGu93Yw-unsplash.jpg")center/cover no-repeat;
-    border-radius: 11px;
-    margin-bottom: 15px;
+
 }
 .product-1 .img-2{
-    width: 379px;
-    height: 500px;
+   
     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e8542c1248e59128e08e3e9_ryan-holloway-JyDmUaXMib4-unsplash.jpg")center/cover no-repeat;
-    border-radius: 11px;
-    margin-bottom: 15px;
+  
 }
 .product-1 .img-3{
-    width: 379px;
-    height: 500px;
+ 
     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85425605cae11f20d46181_denisse-leon-J7CjWufjmg4-unsplash.jpg")center/cover no-repeat;
-    border-radius: 11px;
-    margin-bottom: 15px;
+
 }
 
 .product-1 .title{
@@ -385,12 +384,13 @@ Line-Height:24px;
 
 /* start-view-button */
 .veiw-btn{
-    height: 30vh;
-    margin-top: 20rem;
+    margin-top: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 3rem;
+    
 }
 
 .veiw-btn .btn{
@@ -417,6 +417,7 @@ Line-Height:24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-block: 4.0625rem;
 }
 .content{
     display: flex;
@@ -724,5 +725,63 @@ Line-Height:24px;
 .support-text .left{
     margin-bottom: 2rem;
 }
-    
+.card-covid{
+    /* height: ; */
+    /* position: relative; */
+    margin-top: 10rem;
+}
+.card {
+    grid-template-columns: 1fr;
+}
+.sub-hero {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.sub-hero .context{
+   /* width: 70%; */
+   margin-bottom: 3rem;
+}
+.sub-hero .context h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    /* margin-bottom: 10px; */
+}
+.sub-hero .context p{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: san,sans-serif;
+    line-height: 20px;
+    margin-bottom: 25px;
+   
+    text-align: right;
+}
+
+.sub-hero .context .btn{
+    padding: 12px 18px;
+    /* margin-left: 50%; */
+    border-radius: 5px;
+    /* align-items: self-start; */
+    transition: 0.6s ease-in-out;
+    background: #f9f9f9;
+    text-decoration: none;
+    font-size: 0.925rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #222222;
+   
+}
+.products {
+    grid-template-columns: 1fr;
+}
+.product-1 {
+    margin-bottom: 3.5rem;
+}
+.product-1 .common-imgs {
+    width: auto;
+}
+section .veiw-btn {
+    margin-top: 1.2rem;
+}
 } 
