@@ -1,34 +1,76 @@
-# Project Enhancement
+# E-commerce Website
 
-### Common Branch
+Welcome to our E-commerce project This website is designed to offer a seamless online shopping experience, featuring various sections such as Home, Contact, About, Shop, Announcements, and Donations. Our aim is to create an intuitive and user-friendly platform for customers to browse and purchase products effortlessly.
 
-**Purpose and Usage**
+## Project Overview 
 
-We created this branch to store common elements that are used on every page of the website. Each team member works on different pages, but some parts, like navigation links, need to be the same on all pages.
 
-When a member finishes their page and needs to add links to other pages (like from the Home page to the Contact or Shop pages), they can use the common elements from this branch to keep everything consistent.
+This project is developed by Group 2 of Group E, consisting of the following members:
 
-Using this common branch helps us:
-- Keep navigation links and other shared parts the same on all pages.
-- Let team members add their pages without missing important links.
-- Keep our code organized and easy to manage.
+- `Hanad Mohamed Dahir` - Coordinating the project and managing the team.
+```bash
+1. Abdirahman Mohamud  
 
-This way, each member can work on their pages independently, while shared elements stay uniform and up-to-date.
+2. Bashiir Daahir 
 
-### Started Code massages from here.
-**Added Item Links and Background Images**
+3. Nafisa Mohamed 
+```
+## Website Sections
 
-I add links to items on the Home page using a single CSS file for three HTML files. **I faced a challenge with using different pictures as background images for each item.** Since a single CSS file can only handle one background image per selector so  I resolved this issue by using internal CSS in each HTML file specifically for the background images. This allows the common styles  *h1, h2, p, links and others.* to remain in the external CSS file.
-I also use Font Awesome for icons including the Twitter icon.
+- Home: The landing page that provides an overview of our website and its features.
+- Contact: A page where users can reach out to us for any inquiries or support.
+- About: Information about our team and the mission of our project.
+- Shop: The main section where users can browse and purchase a variety of products. It includes subpages for product details and prices.
+- Announcements: Updates and news related to our website and products.
+- Donations: A page where users can contribute to support our project and its initiatives. It includes subpages providing additional information on how donations are used.
 
-### Another Solution for Images
+## Features
 
-I found another way to handle the background images. Using the main CSS file `detail.css` I gave each image a class and a number. For example on the "White Tent" page I used `image1`. Each page that uses the same dimensions (height, width and border-radius) shares the same class called `dimension-imgs`. This way I only need to define the dimensions once in the CSS. Each image class (like `image1`, `image2` `image3` etc.) is combined with the `dimension-imgs` class keeping everything consistent across all pages. The pages are "White Tent," "Tin Coffee Tumbler," and "Blue Canvas Pack."
+- Browse products by category 
 
-### Responsive Design
+- View product details and prices
 
-I also made each page responsive so they look good on different devices and screen sizes.
+- Make donations with detailed information
 
-## step 3
-### wxaan kusoodaray header iyo footerkii iyo waliba responsivekoodii
-wxaan istimaala kalarada **#eb5757** , **f9f9f9** ,**#222**
+- Contact form for inquiries
+
+- Regular announcements and updates
+
+
+
+## FAQ
+
+#### Question 1: How can I browse products on the website?
+
+A:  Visit the "Shop" section to explore our range of products categorized for easy browsing.
+
+#### Question 1: How can I contact customer support?
+A: Use the "Contact" section to reach out to us with any questions or issues you have.
+
+#### Question 1: How can I contact customer support?
+A: Use the "Contact" section to reach out to us with any questions or issues you have.
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Primary    Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #000000 |
+| Secondary  Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #000000 |
+| Background Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #000000 |
+| Text       Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #000000 |
+
+
+## Acknowledgements
+
+ - will be update soon.
+
+
+## Tech Used
+
+**Frontend:** HTML, CSS, JavaScript
+## Deployment
+
+To deploy this project run
+
+```bash
+(At this time  this project is not deployed. Instructions for deployment will be provided in future updates.)
+```
