@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+}
+
+body{
+    font-family: "Sen", sans-serif;
 }
 
 header{
@@ -18,6 +23,7 @@ header{
 .container{
     width: min(100% , 1200px);
     margin: 0 auto;
+    padding-inline: 0.9375rem;
 }
 /* start-anouncment */
 
@@ -64,6 +70,7 @@ header{
 .cont-parent{
     background: #eb5757;
     height: 4.525rem;
+    position: relative;
 }
 
 .nav-links{
@@ -160,17 +167,15 @@ img{
 .text-covid19{
     height: 25vh;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.text-covid19 .container{
+.text-covid19 .support-text{
     display: flex;
     justify-content: space-between;
 }
 
-
-.text-covid19.container h5{
+.text-covid19 .support-text .left h5{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -178,14 +183,14 @@ img{
     margin-bottom: 7px;
 }
 
-.text-covid19 .container h2{
+.text-covid19 .support-text .left h2{
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     color: #333333;
 }
 
-.text-covid19 .container p{
+.text-covid19 .support-text .right p{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -195,10 +200,7 @@ img{
 /* end text-covid19 */
 
 /* start-cards */
-.card-covid{
-    height: 70vh;
-    
-}
+
 
 .card{
     display: grid;
@@ -209,7 +211,10 @@ img{
 .img-1 img{
     margin-bottom: 45px;
     border-radius: 7px;
-  
+}
+.img-1{
+    width: 100%;
+    height: 100%;
 }
 
 .card .img-1 p{
@@ -227,15 +232,15 @@ Line-Height:24px;
     height: 70vh;
     display: flex;
     align-items: center;
-    margin-top: 65px;
-    background:linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url(" https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
-    background-position: 0px 0px, 50% 50%;
-    background-size: auto, cover;
+    margin-top: 5rem;
+    background:linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url(" https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg")center/cover no-repeat;
+    /* background-position: 0px 0px, 50% 50%; */
+     /* background-size: auto, cover; */
 }
 
 .sub-hero .context{
     color: #f9f9f9;
-    float: right;
+    text-align: right;
 }
 
 .sub-hero .context h2{
@@ -274,10 +279,12 @@ Line-Height:24px;
 
 /* star-products */
 .section-product{
-    height: 60vh;
-    margin-top: 5rem;
+
+    margin-top: 3rem;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .section-product .text p{
@@ -286,8 +293,11 @@ Line-Height:24px;
     line-height: 24px;
     color: rgb(51, 51, 51);
     font-family:Sen, sans-serif;
-}
 
+}
+.section-product .text {
+    margin-bottom: 3rem;
+}
 .section-product .text h3{
     font-size: 40px;
     line-height: 48px;
@@ -299,32 +309,30 @@ Line-Height:24px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
-    margin: 0px 11px;
-    margin-top: 2rem;
-    z-index: -1111;
-    position: relative;
+    /* margin: 0px 11px; */
+    /* margin-top: 2rem; */
+    /* z-index: -1111; */
+    /* position: relative; */
 }
-
+.product-1 .common-imgs {
+    width: 23.6875rem;
+    height: 31.25rem;
+    border-radius: 0.625rem;
+}
 .product-1 .img-1{
-    width: 379px;
-    height: 500px;
+  
     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e856e41c718420c18dd6751_patrick-hendry-eDgUyGu93Yw-unsplash.jpg")center/cover no-repeat;
-    border-radius: 11px;
-    margin-bottom: 15px;
+
 }
 .product-1 .img-2{
-    width: 379px;
-    height: 500px;
+   
     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e8542c1248e59128e08e3e9_ryan-holloway-JyDmUaXMib4-unsplash.jpg")center/cover no-repeat;
-    border-radius: 11px;
-    margin-bottom: 15px;
+  
 }
 .product-1 .img-3{
-    width: 379px;
-    height: 500px;
+ 
     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85425605cae11f20d46181_denisse-leon-J7CjWufjmg4-unsplash.jpg")center/cover no-repeat;
-    border-radius: 11px;
-    margin-bottom: 15px;
+
 }
 
 .product-1 .title{
@@ -355,11 +363,10 @@ Line-Height:24px;
     text-decoration:line-through;
 }
 
-.product-1 .title .btn{
+.title .btn{
     padding: 5px 25px;
     text-decoration: none;
-    background: #eb5757;
-    align-items: self-start;
+    background:#eb5757;
     border-radius: 3px;
     color: #fff;
     font-weight: 700;
@@ -367,21 +374,23 @@ Line-Height:24px;
     line-height: 24px;
     border-radius: 5px;
     transition: 0.6s ease;
+    cursor: pointer !important;
 }
 
-.product-1 .title .btn:hover{
+.title .btn:hover{
     background: #222222;
 }
 /* end-products */
 
 /* start-view-button */
 .veiw-btn{
-    height: 30vh;
-    margin-top: 20rem;
+    margin-top: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 3rem;
+    
 }
 
 .veiw-btn .btn{
@@ -404,10 +413,11 @@ Line-Height:24px;
 /* star-shop-local  */
 
 .shop-local{
-    height: 70vh;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-block: 4.0625rem;
 }
 .content{
     display: flex;
@@ -542,7 +552,9 @@ Line-Height:24px;
         width: 80%;
         display: flex;
         background: transparent;
+        padding: 0 1rem;
         padding-top: 1rem;
+      
     }
 
     .logo-respon .logo{
@@ -659,12 +671,117 @@ Line-Height:24px;
     }
     /* END java script hamburger-responsive */
 
-
-
-    /* start-card */
-    .card{
-        grid-template-columns: 1fr;
-        padding: 0.7rem;
-        border-radius: 4px;
+    /* start-hero-section */
+    .anouncement{
+        padding: 60px 0px;
     }
+    .anouncement p{
+        display: flex;
+        flex-direction: column;
+        gap:20px
+    }
+
+    .hero-content{
+        padding-left: 1rem;
+    }
+    .hero .hero-content h1{
+        font-size: sen , sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 54px;
+        color: #f9f9f9;
+    }
+
+    .hero .hero-content p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: sen , sans-serif;
+        color: #f9f9f9;
+    }
+
+    .hero .hero-content .btn{
+        font-weight: 700;
+        font-family: sen, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #f9f9f9;
+    }
+
+    .hero-content .btn:hover{
+        color: #222222;
+    }
+
+    /* start text-covid19 */
+.text-covid19{
+    flex-direction: column;
+    margin-block: 3rem;
 }
+
+.support-text{
+    flex-direction: column;
+}
+
+.support-text .left{
+    margin-bottom: 2rem;
+}
+.card-covid{
+    /* height: ; */
+    /* position: relative; */
+    margin-top: 10rem;
+}
+.card {
+    grid-template-columns: 1fr;
+}
+.sub-hero {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.sub-hero .context{
+   /* width: 70%; */
+   margin-bottom: 3rem;
+}
+.sub-hero .context h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    /* margin-bottom: 10px; */
+}
+.sub-hero .context p{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: san,sans-serif;
+    line-height: 20px;
+    margin-bottom: 25px;
+   
+    text-align: right;
+}
+
+.sub-hero .context .btn{
+    padding: 12px 18px;
+    /* margin-left: 50%; */
+    border-radius: 5px;
+    /* align-items: self-start; */
+    transition: 0.6s ease-in-out;
+    background: #f9f9f9;
+    text-decoration: none;
+    font-size: 0.925rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #222222;
+   
+}
+.products {
+    grid-template-columns: 1fr;
+}
+.product-1 {
+    margin-bottom: 3.5rem;
+}
+.product-1 .common-imgs {
+    width: auto;
+}
+section .veiw-btn {
+    margin-top: 1.2rem;
+}
+} 
