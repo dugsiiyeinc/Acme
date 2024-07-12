@@ -6,14 +6,15 @@
             How we're responding to COVID-19
         </p>
     </div>
-    
+
     <!--end-anouncment -->
-     <!-- hamburger menu-Responsive -->
-     <div class="hamburger">
-        <i class="fa-solid fa-bars" data-visible="true"></i>
-        <i class="fa-solid fa-bars bar" data-visible="false"></i>
-     </div>
+    <!-- hamburger menu-Responsive -->
+
     <div class="cont-parent">
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-bars bar" data-visible="false"></i>
+        </div>
         <nav class="container">
             <div class="menus">
                 <div class="logo">
@@ -21,8 +22,8 @@
                         alt="">
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/Home.html">Home</a></li>
+                    <li><a href="/About.html">About</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Donate</a></li>
                     <li><a href="#">Contact</a></li>
@@ -30,7 +31,14 @@
                 </ul>
             </div>
         </nav>
+        <div class="logo-respon">
+            <div class="logo">
+                <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                    alt="">
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </div>
 
+        </div>
     </div>
     <!-- Start-Mobile-Menu -->
     <nav class="mobile-menu" data-visible="false">
@@ -40,367 +48,263 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Donate</a></li>
-                <li><a href="#">Contact</a></li> 
+                <li><a href="#">Contact</a></li>
             </div>
         </div>
     </nav>
-    <div class="logo-respon">
-        <div class="logo">
-        <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
-        alt="">
-        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </div>
 
-    </div>
 </header>
+<!-- END HTML -->
 
-    <!-- START-FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="content-foter">
-                <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
-                alt="">
-                <div class="text-foter">
-                    <p>Made In <span>Webflow</span>. &copy; 2020.</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-square-twitter"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- END-FOOTER -->
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
 
-      <!-- java script -->
-      <script>
-        const hamburger = document.querySelector('.hamburger');
-        const mobileMenu = document.querySelector(".mobile-menu");
-        const icons = document.querySelectorAll("i");
-
-        hamburger.addEventListener("click", function (event) {
-            const isVisible = mobileMenu.getAttribute('data-visible');
-            if (isVisible == "true") {
-                // qari hiding
-                mobileMenu.setAttribute('data-visible', "false");
-                icons[0].setAttribute('data-visible', "true");
-                icons[1].setAttribute('data-visible', "false");
-            } else if (isVisible == "false") {
-                // soo bandhig showing
-                mobileMenu.setAttribute('data-visible', "true");
-                icons[0].setAttribute('data-visible', "false");
-                icons[1].setAttribute('data-visible', "true");
-            }
-        });
-    </script>
-
-    <!-- qaybtii csss header-ka -->
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      font-family: "Open Sans", sans-serif;
-    }
-    
-    header{
-        height: 8vh;
-        /* background:#eb5757; */
-        position: sticky;
-        top: 0px;
-        z-index: 10;
-    }
-    
-    
-    
-    .container{
-        width: min(100% , 1200px);
-        margin: 0 auto;
-    }
-    /* start-anouncment */
-    
-    .anouncement{
-        height: 74px;
-        background: #222222;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .anouncement p{
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 27px;
-        color: #f9f9f9;
-        text-decoration: none;
-    }
-    
-    .anouncement  p a{
-        text-decoration: none;
-        color: #f9f9f9;
-        padding: 8px 25px;
-        border-radius: 32px;
-        background: #eb5757;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        margin-right: 7px;
-    }
-    /* end-anouncment */
-    .logo{
-        cursor: pointer;
-    }
-    
-    .menus{
-        display: flex;
-        justify-content: space-between;
-        height: 100%;
-        align-items: center;
-        padding-top: 1rem;
-    }
-    
-    .cont-parent{
-        background: #eb5757;
-        height: 4.525rem;
-    }
-    
-    .nav-links{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
-    }
-    
-    .nav-links li{
-        font-size:16px;
-        font-weight: 400;
-        line-height: 25px;
-        margin: 0px 20px;
-    }
-    
-    .nav-links li a{
-        text-decoration: none;
-        padding: 8px 14px;
-        color: #fff;
-        border-radius: 7px;
-        transition: 0.6s ease-in-out;
-    }
-    
-    .nav-links li:nth-child(6){
-        background: #222222;
-        padding: 6px 14px;
-        font-size: 16px;
-        border-radius: 5px;
-    }
-    
-    .nav-links li a:hover{
-        background: #222222;
-    }
-
-    <!-- qayta foooter-ka -->
-     
-/* START-FOOTER */
-.footer{
-    height: 27vh;
-    margin-top: 4rem;
-    background: #222222;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.content-foter{
-    display: flex;
-    justify-content: space-between;
-    color: #f9f9f9;
-}
-.content-foter img{
-    cursor: pointer;
+body {
+  font-family: "Sen", sans-serif;
 }
 
-.text-foter p{
-    padding-top: 8rem;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-}
-.text-foter p span{
-    color: rgb(235, 87, 87);
-    text-decoration: underline;
-    cursor: pointer;
-    transition: 0.6s ease-in-out;
+header {
+  height: 8vh;
+  /* background:#eb5757; */
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
-.text-foter p span:hover{
-    text-decoration: none;
+.container {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+}
+/* start-anouncment */
+<!-- ======== -->
+<!--START CSS  -->
+.anouncement{
+  height: 74px;
+  background: #222222;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.anouncement p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: #f9f9f9;
+  text-decoration: none;
 }
 
-.icon{
-    margin-top: 4rem;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 24px;
+.anouncement p a {
+  text-decoration: none;
+  color: #f9f9f9;
+  padding: 8px 25px;
+  border-radius: 32px;
+  background: #eb5757;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 7px;
+}
+/* end-anouncment */
+.logo {
+  cursor: pointer;
 }
 
-.icon i{
-    font-size: 2rem;
-    padding: 0px 8px;
-    background: #222222;
-    cursor: pointer;
-    transition: 0.6s ease-in-out;
+.menus {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding-top: 1rem;
 }
 
-.icon i:hover{
-    color: #bdbdbd;
+.cont-parent {
+  background: #eb5757;
+  height: 4.525rem;
+  position: relative;
 }
 
-/* END-FOOTER */
-.hamburger{
-    display: none;
-}
-.mobile-menu{
-    display: none;
-}
-.logo-respon{
-    display: none;
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
-<!-- qaybta-responsive -->
-/* start responsive */
-@media(max-width:780px){
-    header .menus{
-        display: none;
-        width: 100%;
+.nav-links li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0px 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 7px;
+  transition: 0.6s ease-in-out;
+}
+
+.nav-links li:nth-child(6){
+  background: #222222;
+  padding: 6px 14px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.nav-links li:nth-child(6)::after{
+  content: "0";
+  width: 20px;
+  height: 20px;
+  font-size:1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background: #fff;
+  color: #222;
+  position: absolute;
+  right: -4px;
+  top: -6px;
+  text-align: center;
+}
+.nav-links li a:hover {
+  background: #222222;
+}
+<!-- END CSS -->
+
+<!-- START-RESPONSIVE- -->
+
+@media (max-width: 780px){
+    header .menus {
+      display: none;
+      width: 100%;
     }
-
-    .logo-respon{
-        display: flex !important;
-        width: 80%;
-        display: flex;
-        background: transparent;
-        padding-top: 1rem;
+  
+    .logo-respon {
+      display: flex !important;
+      width: 80%;
+      display: flex;
+      background: transparent;
+      padding: 0 1rem;
+      padding-top: 1rem;
     }
-
-    .logo-respon .logo{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5px;
-        padding: 0px 10px;
+  
+    .logo-respon .logo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+      padding: 0px 10px;
     }
-
-    .logo a{
-        text-decoration: none;
-        color: #f9f9f9;
-        font-size: 20px;
-        background: #222222;
-        padding: 6px 15px;
-        border-radius: 5px;
+  
+    .logo a {
+      text-decoration: none;
+      color: #f9f9f9;
+      font-size: 20px;
+      background: #222222;
+      padding: 6px 15px;
+      border-radius: 5px;
     }
-
-    .hamburger{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background: #f7f7f7; */
-        color: #f9f9f9;
-        position: absolute;
-        top: 6%;
-        right: 7%;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        font-size: 1.5rem;
-        cursor: pointer;
+  
+    .hamburger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background: #f7f7f7; */
+      color: #f9f9f9;
+      position: absolute;
+      top: 6%;
+      right: 7%;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
     }
-
-    .hamburger .bar{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 50px;
-        width: 50px;
-        padding-top: 12px;
-        background: #222222;
-        margin-top: 1.5rem;
-        border-radius: 5px;
+  
+    .hamburger .bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 50px;
+      width: 50px;
+      padding-top: 12px;
+      background: #222222;
+      margin-top: 1.5rem;
+      border-radius: 5px;
     }
-
-    .hamburger i{
-        z-index: 22222;
+  
+    .hamburger i {
+      z-index: 22222;
     }
-   
-
-/* START-MOBILE-MENU */
-.mobile-menu{
-    display: flex;
-    justify-content: center;
-    background: #eb5757;
-    position: fixed;
-    inset: 0 0 0 0;
-    width: 100%;
-    text-align: center;
-    transform: translateX(0%);
-    transition: transform 0.8s ease-in-out;
-}
-
-.navigation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 9rem;
-    width: 100%;
-}
-.navigation .menu-link{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.6rem;
-    width: 98%;
-    text-align: center;
-    
-}
-.menu-link li{
-    list-style: none;
-    font-weight: 400;
-    line-height: 45px;
-    font-size: 30px;
-    font-family: sen sans-serif;
-    width: 98%;
-    transition: 0.6s ease-in-out;
-}
-.menu-link li a{
-    text-decoration: none;
-    color: #f9f9f9;
-}
-
-.menu-link li:hover{
-    background: #222;
-    border-radius: 5px;
-}
-
-       /* START java script hamburger-responsive */
-    
-       .mobile-menu[data-visible="false"]{
-        transform: translateX(100%);
+  
+    /* START-MOBILE-MENU */
+    .mobile-menu {
+      display: flex;
+      justify-content: center;
+      background: #eb5757;
+      position: fixed;
+      inset: 0 0 0 0;
+      width: 100%;
+      text-align: center;
+      transform: translateX(0%);
+      transition: transform 0.8s ease-in-out;
     }
-
-    .hamburger i[data-visible="true"]{
-        display: block;
+  
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 9rem;
+      width: 100%;
     }
-
-    .hamburger i[data-visible="false"]{
-        display: none;
+    .navigation .menu-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 98%;
+      text-align: center;
+    }
+    .menu-link li {
+      list-style: none;
+      font-weight: 400;
+      line-height: 45px;
+      font-size: 30px;
+      font-family: sen sans-serif;
+      width: 98%;
+      transition: 0.6s ease-in-out;
+    }
+    .menu-link li a {
+      text-decoration: none;
+      color: #f9f9f9;
+    }
+  
+    .menu-link li:hover {
+      background: #222;
+      border-radius: 5px;
+    }
+  
+    /* START java script hamburger-responsive */
+  
+    .mobile-menu[data-visible="false"] {
+      transform: translateX(100%);
+    }
+  
+    .hamburger i[data-visible="true"] {
+      display: block;
+    }
+  
+    .hamburger i[data-visible="false"] {
+      display: none;
     }
     /* END java script hamburger-responsive */
-
-
-
-    /* start-card */
-    .card{
-        grid-template-columns: 1fr;
-        padding: 0.7rem;
-        border-radius: 4px;
-    }
 }
