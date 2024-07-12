@@ -14,8 +14,8 @@
         <!--start-anouncment-->
         <div class="anouncement">
             <p>
-                <a href="#">Announcement</a>
-                How we're responding to COVID-19
+                <a href="#"><span>Announcement</span>
+                    How we're responding to COVID-19</a>
             </p>
         </div>
 
@@ -177,90 +177,97 @@
                     </div>
                 </div>
             </div>
+
+            <!-- start-view-button -->
+             <div class="veiw-btn">
+                <a href="#" class="btn">View All Products</a>
+            </div>
+        <!-- END-view-button -->
         </div>
     </section>
     <!-- End-products -->
 
-    <!-- start-view-button -->
-    < <section class="veiw-btn">
-        <div class="container">
-            <a href="#" class="btn">View All Products</a>
-        </div>
-        </section>
-        <!-- END-view-button -->
 
-        <!--star-shop-local -->
-        <div class="shop-locals">
-            <div class="container ">
-                <div class="content">
-                    <div class="left"></div>
-                    <div class="text">
-                        <h2>Shop Local.</h2>
-                        <p>We know that during COVID-19, a lot of folks around the city and state are feeling
-                            uneasy about
-                            the future - we’re not sure what the future holds either.</p>
-                
-                        <p>That said: we know that we love making sure you have the gear you need for your
-                            adventures, and
-                            we’re going to keep doing that - with our team - until the city tells us we can’t.</p>
+    <!--star-shop-local -->
+    <div class="shop-locals">
+        <div class="container ">
+            <div class="content">
+                <div class="left"></div>
+                <div class="text">
+                    <h2>Shop Local.</h2>
+                    <p>We know that during COVID-19, a lot of folks around the city and state are feeling
+                        uneasy about
+                        the future - we’re not sure what the future holds either.</p>
 
-                        <p> But as long as folks like yourself support small businesses around the city, then we’ll
-                            be here
-                            —  every day, making sure your orders arrive on time.</p>
-                        <p>
-                            -------
-                        </p>
-                        <p>Jane & John Doe
-                        <h5>Acme Outdoors</h5>
-                        </p>
-                    </div>
+                    <p>That said: we know that we love making sure you have the gear you need for your
+                        adventures, and
+                        we’re going to keep doing that - with our team - until the city tells us we can’t.</p>
+
+                    <p> But as long as folks like yourself support small businesses around the city, then we’ll
+                        be here
+                        — every day, making sure your orders arrive on time.</p>
+                    <p>
+                        -------
+                    </p>
+                    <p>Jane & John Doe
+                    <h5>Acme Outdoors</h5>
+                    </p>
                 </div>
             </div>
         </div>
-        <!--END-shop-local
+    </div>
+    <!--END-shop-local
 
-    <!-- START-FOOTER -->
-        <footer class="footer">
+ <!-- START-FOOTER -->
+    <footer class="footer">
         <div class="container">
             <div class="content-foter">
                 <div class="img-icon">
-                <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
-                alt="">
-                <div class="icon">
-                    <i class="fa-brands fa-square-twitter"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
+                    <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                        alt="">
+                    <div class="icon">
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
                 </div>
                 <div class="text-foter">
                     <p>Made In <span>Webflow</span>. &copy; 2020.</p>
                 </div>
             </div>
         </div>
+        <div class="logo-footer">
+            <a href="#" class="loogo-text-bottom">
+                <img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg"
+                    alt="logo-footer">
+                <img src="https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg"
+                    alt="text-looge-footer">
+            </a>
+        </div>
     </footer>
-        <!-- END-FOOTER -->
+    <!-- END-FOOTER -->
 
-        <!-- java script -->
-        <script>
-            const hamburger = document.querySelector('.hamburger');
-            const mobileMenu = document.querySelector(".mobile-menu");
-            const icons = document.querySelectorAll("i");
+    <!-- java script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
 
-            hamburger.addEventListener("click", function (event) {
-                const isVisible = mobileMenu.getAttribute('data-visible');
-                if (isVisible == "true") {
-                    // qari hiding
-                    mobileMenu.setAttribute('data-visible', "false");
-                    icons[0].setAttribute('data-visible', "true");
-                    icons[1].setAttribute('data-visible', "false");
-                } else if (isVisible == "false") {
-                    // soo bandhig showing
-                    mobileMenu.setAttribute('data-visible', "true");
-                    icons[0].setAttribute('data-visible', "false");
-                    icons[1].setAttribute('data-visible', "true");
-                }
-            });
-        </script>
+        hamburger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+    </script>
 
 </body>
 
