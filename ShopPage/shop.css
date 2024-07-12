@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Common Css  */
+:root {
+  --color1: #333;
+  --color2: #222;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+body {
+  font-family: "Sen", sans-serif;
+  background-color: #fff;
+}
+.container {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding-inline: 0.9375rem;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+/* sytle header*/
+header {
+  background-color: var(--color2);
+  padding: 1.875rem 0;
+  width: 100%;
+}
+/* product section style  */
+.our-product h1 {
+  color: #f9f9f9;
+  font-size: 2.375rem;
+  line-height: 2.75rem;
+  text-transform: capitalize;
+}
+/* Style Hero section */
+.hero-section {
+  padding-block: 4.0625rem;
+}
+.hero {
+  background: linear-gradient(rgba(34, 33, 34, 0.299), rgba(34, 34, 33, 0.737)),
+    url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e856e41c718420c18dd6751_patrick-hendry-eDgUyGu93Yw-unsplash.jpg")
+      center/cover no-repeat;
+  height: 34vh;
+  position: relative;
+  border-radius: 0.3125rem;
+}
+.inside-text {
+  position: absolute;
+  bottom: 7%;
+  left: 3%;
+}
+.hero .inside-text h2 {
+  color: #f9f9f9;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.inside-text p {
+  font-weight: 400;
+  color: #f9f9f9;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.hero span {
+  font-weight: 400;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: #f9f9f9;
+  position: absolute;
+  right: 2%;
+  top: 7%;
+  padding: 6px 20px;
+  border-radius: 0.3125rem;
+}
+
+/* Sthyle for content section */
+
+.content-section {
+  padding-block: 4.0625rem;
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 1.5625rem;
+}
+.category {
+ flex-basis: 20%;
+}
+.content-section .category h2 {
+  color: #333;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  margin-bottom: 0.625rem;
+}
+.category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.category ul li {
+  border: 1px solid #222;
+  margin-bottom: 10px;
+  border-radius: 0.3125rem;
+}
+.category ul li a {
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  padding-inline: 20px;
+  padding-block: 7px;
+  transition: 0.4s;
+}
+
+.category ul li a:hover {
+  color: #f9f9f9;
+  background-color: #222;
+}
+.category ul li a:focus {
+  color: #f9f9f9;
+  background-color: #cb0707;
+  outline: none;
+}
+
+.cards {
+  grid-column: 2 /-1;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(18.75rem,18rem )); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  row-gap: 3rem;
+}
+
+.common-dimensions-img {
+  height: 25rem;
+  width: 18.75rem;
+  margin-bottom: 0.9375rem;
+  border-radius: 0.3125rem;
+}
+
+
+
+
+
+.card1 .image1 {
+  background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e861d123df4d175e80e8beb_acme-gift-card.jpg")
+    center/cover no-repeat;
+}
+.image2 {
+  background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e8542c1248e59128e08e3e9_ryan-holloway-JyDmUaXMib4-unsplash.jpg")
+    center/cover no-repeat;
+}
+.image3 {
+  background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85425605cae11f20d46181_denisse-leon-J7CjWufjmg4-unsplash.jpg")
+    center/cover no-repeat;
+  text-align: right;
+  position: relative;
+}
+.image3 span {
+  background-color: #eb5757;
+  color: white;
+  padding: 8px 20px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+}
+.image4 {
+  background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e8542198347409e463f436b_jakob-owens-O_bhy3TnSYU-unsplash.jpg")
+    center/cover no-repeat;
+}
+.image5 {
+  background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e856e41c718420c18dd6751_patrick-hendry-eDgUyGu93Yw-unsplash.jpg")
+    center/cover no-repeat;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+.info p {
+  font-weight: 400;
+  color: #222222;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.info .price {
+  font-weight: 700;
+  color: #222;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  display: flex;
+  justify-content: center;
+}
+.info .btn {
+  background-color: #eb5757;
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  padding: 5px 25px;
+  border-radius: 0.3125rem;
+  transition: 0.4s;
+}
+.info .btn:hover {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+@media (max-width: 768px){
+  .content-section {
+    flex-direction: column;
+  }
+ 
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .common-dimensions-img {
+    width: 100%;
+  }
+}

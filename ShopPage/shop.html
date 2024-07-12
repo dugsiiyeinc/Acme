@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <!-- icon  -->
+    <link
+      rel="icon"
+      href="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8651e2daefb4744237fd55_Favicon%20-%20Red.png"
+    />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container our-product">
+        <h1>Shop Our Products</h1>
+      </div>
+    </header>
+    <section class="container hero-section">
+      <a href="linksShopsPages/white_tent.html">
+        <div class="hero">
+          <div class="inside-text">
+            <h2>White Tent</h2>
+            <p>$ 200.00 USD</p>
+          </div>
+          <span>Featuerd Item </span>
+        </div>
+      </a>
+    </section>
+    <section class="container content-section">
+      <aside class="category">
+        <h2>Shop by Category</h2>
+        <ul>
+          <li><a  href="./links_Categ/gift.html">Gift Cards</a></li>
+          <li><a href="./links_Categ/whiteTent.html">Tents</a></li>
+          <li><a href="./links_Categ/tin.html">Accessories</a></li>
+          <li><a href="./links_Categ/packs.html">Packs</a></li>
+        </ul>
+      </aside>
+      <div class="cards">
+        <!-- link1 and having img 1 -->
+        <div class="card1">
+          <a href="linksShopsPages/giftCard.html"
+            ><div class="image1 common-dimensions-img"></div>
+            <div class="info">
+              <p>Gift Card</p>
+              <span class="price">$ 25.00 USD</span>
+              <a href="#" class="btn">Details</a>
+            </div></a
+          >
+        </div>
+
+        <!-- link 2 and having img 2 -->
+        <div class="card1">
+          <a href="linksShopsPages/tin_coffe.html">
+            <div class="image2 common-dimensions-img"></div>
+
+            <div class="info">
+              <p>Tin Coffee Tumbler</p>
+              <span class="price">$ 35.00 USD</span>
+              <a href="#" class="btn">Details</a>
+            </div>
+          </a>
+        </div>
+
+        <!-- link 3 and having img 3 -->
+
+        <div class="card1">
+          <a href="linksShopsPages/BlueCanvasPack.html">
+            <div class="image3 common-dimensions-img">
+              <span>SALE</span>
+            </div>
+
+            <div class="info">
+              <p>Blue Canvas Pack</p>
+              <span class="price"
+                >$ 95.00 USD <s style="color: #eb5757"> $ 145.00 USD</s>
+              </span>
+              <a href="#" class="btn">Details</a>
+            </div></a
+          >
+        </div>
+
+        <!-- link 4 and having img 4 -->
+
+        <div class="card1">
+          <a href="linksShopsPages/GreenCanvPa.html">
+            <div class="image4 common-dimensions-img"></div>
+
+            <div class="info">
+              <p>Green Canvas Pack</p>
+              <span class="price">$ 125.00 USD</span>
+              <a href="#" class="btn">Details</a>
+            </div>
+          </a>
+        </div>
+        <!-- I want to use this inside for category folder also it is not include the box -->
+        <!-- <div class="card1">
+          <a href="linksShopsPages/GreenCanvPa.html">
+            <div class="image5 common-dimensions-img"></div>
+
+            <div class="info">
+              <p>White Tent</p>
+              <span class="price">$ 200.00 USD</span>
+              <a href="#" class="btn">Details</a>
+            </div>
+          </a>
+        </div> -->
+      </div>
+    </section>
+
+
+    <script>
+      document.querySelectorAll('.category ul li a').forEach(function(link) {
+          link.addEventListener('click', function(event) {
+              // Remove 'clicked' class from all links
+              document.querySelectorAll('.category ul li a').forEach(function(link) {
+                  link.classList.remove('clicked');
+              });
+              
+              // Add 'clicked' class to the clicked link
+              event.target.classList.add('clicked');
+          });
+      });
+  </script>
+  </body>
+</html>
