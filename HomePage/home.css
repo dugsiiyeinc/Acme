@@ -903,7 +903,7 @@ height: 440px;
     font-size: 30px;
     font-family: sen sans-serif;
     width: 98%;
-    transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out
   }
   .menu-link li a {
     text-decoration: none;
@@ -1154,6 +1154,7 @@ height: 440px;
     width: 100%;
   }
 
+<<<<<<< HEAD
   /*START-MEET-OWNER-WITH-RESPONSIVE*/
 
   
@@ -1221,4 +1222,6 @@ height: 440px;
     width: 80%;
     text-wrap: wrap;
   }
+=======
+>>>>>>> 433d03857d368f282fc62e111a81191f314512ea
 }
