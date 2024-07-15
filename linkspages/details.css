@@ -17,7 +17,7 @@ h4 {
 }
 body {
   font-family: "Sen", sans-serif;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 .container {
   width: min(100%, 1200px);
@@ -25,20 +25,127 @@ body {
   padding-inline: 0.9375rem;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 /* sytle header*/
 header {
   background-color: var(--color2);
-  padding: 1.875rem 0;
+  /* padding: 1.875rem 0; */
+  /* width: 100%; */
+  position: sticky;
+  top: 0;
+  /* position: relative;
+  top: 0; */
+}
+a {
+  text-decoration: none;
+}
+
+/* Annoucemt style */
+.announcement {
+  background-color: var(--color2);
+  padding: 1.55rem 0;
+
   width: 100%;
 }
+.announcement p {
+  text-align: center;
+}
+.announcement a {
+  color: #f9f9f9;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  /* text-transform: capitalize; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.925rem;
+}
+.announcement a span {
+  font-size: 1rem;
+  background-color: #eb5757;
+  border-radius: 1.2rem;
+  padding: 8px 22px;
+}
+/* Desktop style */
+.bagr-desktop {
+  background-color: #eb5757;
+}
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  /* height: 1vh; */
+}
+
+.desktop-menu .menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.menu-links a {
+  color: #f9f9f9;
+  padding: 5px 15px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  position: relative;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 0.2rem;
+}
+.menu-links a:hover {
+  background-color: var(--color2);
+  color: white;
+  border-radius: 0.325rem;
+}
+.menu-links li:last-child a {
+  background-color: transparent;
+}
+.cart {
+  background-color: none !important;
+}
+
+.menu-links a img {
+  height: 1.7rem;
+  background-color: var(--color2);
+  width: 50px;
+  border-radius: 0.325rem;
+  padding: 1px 0;
+  margin-top: 8px;
+  position: relative;
+}
+.menu-links .cart::after {
+  content: "0";
+  color: black;
+  background-color: #f9f9f9;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  right: 10px;
+  border-radius: 20px;
+
+  position: absolute;
+  font-size: 0.725rem;
+  font-weight: 600;
+}
+.white-tent {
+  padding-block: 2.5rem;
+  background-color: var(--color2);
+}
+
 .text-tent h1 {
   color: #f9f9f9;
   font-size: 2.375rem;
   line-height: 2.75rem;
   text-transform: capitalize;
 }
+/* ++++========== DONE HEADER STYLE UP========++ */
 
 /* Style for white tent */
 .content-section {
@@ -178,6 +285,80 @@ input[type="submit"]:hover {
   color: #d3cece;
 }
 
+/* START-FOOTER */
+.footer {
+  height: 27vh;
+  background: #222222;
+  width: 100%;
+  display: flex;
+  padding: 4.0625rem 0 0.625rem;
+}
+
+.content-foter {
+  display: flex;
+  justify-content: space-between;
+  color: #f9f9f9;
+  align-items: center;
+  height: 50%;
+  
+}
+.content-foter img {
+  cursor: pointer;
+  width: 5.5rem;
+}
+.icon {
+ 
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text-foter {
+  margin-bottom: 0;
+}
+.text-foter p {
+  /* padding-top: 8rem; */
+  font-size: 0.925rem;
+  font-weight: 400;
+  /* line-height: 18px; */
+  color: #f9f9f9;
+  text-align: center;
+  /* vertical-align: bottom; */
+}
+.text-foter p span {
+  color: rgb(235, 87, 87);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+
+.text-foter p span:hover {
+  text-decoration: none;
+}
+.text-bottome-footer {
+  position: relative;
+}
+.loogo-text-bottom {
+  background-color: #f9f9f9;
+  padding: 5px 5px;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+}
+
+
+
+.icon i {
+  font-size: 2rem;
+  padding: 0px 8px;
+  background: #222222;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+
+.icon i:hover {
+  color: #bdbdbd;
+}
+
 @media (max-width: 768px) {
   .prodeuct-heading {
     flex-direction: column;
@@ -187,5 +368,33 @@ input[type="submit"]:hover {
     width: auto;
     height: 21.875rem;
     background-size: cover;
+  }
+  .announcement a {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-foter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.925rem;
+  }
+  .content-foter img {
+    width: 6.5rem;
+  }
+  .text-foter p {
+    padding-top: 1.2rem;
+  }
+  .icon {
+    margin-bottom: 1.2rem;
+  }
+  .icon i {
+    margin-right: 1.2rem;
+
+
   }
 }
