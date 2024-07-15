@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packs</title>
+    <!-- icon  -->
+    <link
+      rel="icon"
+      href="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8651e2daefb4744237fd55_Favicon%20-%20Red.png"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../shop.css" />
+  </head>
+  <body>
+    <header>
+      <!--start-anouncment-->
+      <div class="anouncement">
+          <p>
+              <a href="#"><span>Announcement</span>
+              How we're responding to COVID-19</a>
+          </p>
+      </div>
+
+      <!--end-anouncment -->
+      <!-- hamburger menu-Responsive -->
+
+      <div class="cont-parent">
+          <div class="hamburger">
+              <i class="fa-solid fa-bars" data-visible="true"></i>
+              <i class="fa-solid fa-bars bar" data-visible="false"></i>
+          </div>
+          <nav class="container">
+              <div class="menus">
+                  <div class="logo">
+                      <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                          alt="">
+                  </div>
+                  <ul class="nav-links">
+                      <li><a href="/Home.html">Home</a></li>
+                      <li><a href="/About.html">About</a></li>
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Donate</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                  </ul>
+              </div>
+          </nav>
+          <div class="logo-respon">
+              <div class="logo">
+                  <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                      alt="">
+                  <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </div>
+
+          </div>
+      </div>
+      <!-- Start-Mobile-Menu -->
+      <nav class="mobile-menu" data-visible="false">
+          <div class="navigation">    
+              <div class="menu-link">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Donate</a></li>
+                  <li><a href="#">Contact</a></li>
+              </div>
+          </div>
+      </nav>
+
+  </header>
+  <div class="prodeuctHeader">
+    <div class="container our-product">
+      <h1>Shop Our Products</h1>
+    </div>
+  </div>
+    
+    <section class="container content-section">
+      <aside class="category">
+        <h2>Shop by Category</h2>
+        <ul>
+          <li><a href="gift.html">Gift Cards</a></li>
+          <li><a href="whiteTent.html">Tents</a></li>
+          <li><a href="tin.html">Accessories</a></li>
+          <li><a href="packs.html">Packs</a></li>
+        </ul>
+      </aside>
+      <div class="cards">
+       
+        <div class="card1">
+            <a href="linksShopsPages/BlueCanvasPack.html">
+              <div class="image3 common-dimensions-img">
+                <span>SALE</span>
+              </div>
+  
+              <div class="info">
+                <p>Blue Canvas Pack</p>
+                <span class="price"
+                  >$ 95.00 USD <s style="color: #eb5757"> $ 145.00 USD</s>
+                </span>
+                <a href="#" class="btn">Details</a>
+              </div></a
+            >
+          </div>
+  
+          <!-- link 4 and having img 4 -->
+  
+          <div class="card1">
+            <a href="linksShopsPages/GreenCanvPa.html">
+              <div class="image4 common-dimensions-img"></div>
+  
+              <div class="info">
+                <p>Green Canvas Pack</p>
+                <span class="price">$ 125.00 USD</span>
+                <a href="#" class="btn">Details</a>
+              </div>
+            </a>
+          </div>
+
+      </div>
+    </section>
+     <!-- footer -->
+     <footer class="footer">
+      <div class="container">
+          <div class="content-foter">
+              <div class="img-icon">
+              <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+              alt="">
+              <div class="icon">
+                  <i class="fa-brands fa-square-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+              </div>
+              </div>
+              <div class="text-foter">
+                  <p>Made In <span>Webflow</span>. &copy; 2020.</p>
+              </div>
+          </div>
+      </div>
+      <div class="logo-footer">
+          <a href="#" class="loogo-text-bottom">
+              <img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg" alt="logo-footer">
+              <img src="https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg" alt="text-looge-footer">
+            </a>
+      </div>
+    </footer>
+        <!-- java script -->
+        <script>
+          const hamburger = document.querySelector('.hamburger');
+          const mobileMenu = document.querySelector(".mobile-menu");
+          const icons = document.querySelectorAll("i");
+
+          hamburger.addEventListener("click", function (event) {
+              const isVisible = mobileMenu.getAttribute('data-visible');
+              if (isVisible == "true") {
+                  // qari hiding
+                  mobileMenu.setAttribute('data-visible', "false");
+                  icons[0].setAttribute('data-visible', "true");
+                  icons[1].setAttribute('data-visible', "false");
+              } else if (isVisible == "false") {
+                  // soo bandhig showing
+                  mobileMenu.setAttribute('data-visible', "true");
+                  icons[0].setAttribute('data-visible', "false");
+                  icons[1].setAttribute('data-visible', "true");
+              }
+          });
+      </script>
+  </body>
+</html>

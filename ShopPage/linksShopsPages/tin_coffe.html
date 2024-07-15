@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tin Coffee Tumbler</title>
+    <link
+      rel="icon"
+      href="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8651e2daefb4744237fd55_Favicon%20-%20Red.png"
+    />
+    <!-- fonts awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- main css  -->
+    <link rel="stylesheet" href="details.css" />
+  </head>
+  <body>
+    <header>
+      <!--start-anouncment-->
+      <div class="anouncement">
+          <p>
+              <a href="#"><span>Announcement</span>
+              How we're responding to COVID-19</a>
+          </p>
+      </div>
+
+      <!--end-anouncment -->
+      <!-- hamburger menu-Responsive -->
+
+      <div class="cont-parent">
+          <div class="hamburger">
+              <i class="fa-solid fa-bars" data-visible="true"></i>
+              <i class="fa-solid fa-bars bar" data-visible="false"></i>
+          </div>
+          <nav class="container">
+              <div class="menus">
+                  <div class="logo">
+                      <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                          alt="">
+                  </div>
+                  <ul class="nav-links">
+                      <li><a href="/Home.html">Home</a></li>
+                      <li><a href="/About.html">About</a></li>
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Donate</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                  </ul>
+              </div>
+          </nav>
+          <div class="logo-respon">
+              <div class="logo">
+                  <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                      alt="">
+                  <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </div>
+
+          </div>
+      </div>
+      <!-- Start-Mobile-Menu -->
+      <nav class="mobile-menu" data-visible="false">
+          <div class="navigation">    
+              <div class="menu-link">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Donate</a></li>
+                  <li><a href="#">Contact</a></li>
+              </div>
+          </div>
+      </nav>
+
+  </header>
+    <div class="whiteTent-section">
+      <div class="container text-tent">
+        <h1>Tin Coffee Tumbler</h1>
+      </div>
+     </div> 
+     
+    <section class="container prodeuct-heading content-section">
+      <!-- left side for image -->
+      <div class="image2 dimension-imgs"></div>
+
+      <!-- left side for image -->
+      <div class="content-tent">
+        <h2>Tin Coffee Tumbler</h2>
+        <p><strong>$ 35.00 USD</strong></p>
+        <form action="">
+          <label for="quantity">Quantity</label>
+          <input
+            type="number"
+            name="quantity"
+            id="quantity"
+            min="1"
+            value="1"
+          />
+          <!-- <button type="submit">Add to Cart</button> -->
+          <input
+            type="submit"
+            name="quantity"
+            id="quantity"
+            value="Add to Cart"
+          />
+        </form>
+        <div class="rich-texts">
+          <h2>What’s a Rich Text element?</h2>
+          <p>
+            The rich text element allows you to create and format headings,
+            paragraphs, blockquotes, images, and video all in one place instead
+            of having to add and format them individually. Just double-click and
+            easily create content.
+          </p>
+          <h4>Static and dynamic content editing</h4>
+          <p>
+            A rich text element can be used with static or dynamic content. For
+            static content, just drop it into any page and begin editing. For
+            dynamic content, add a rich text field to any collection and then
+            connect a rich text element to that field in the settings panel.
+            Voila!
+          </p>
+          <h4>How to customize formatting for each rich text</h4>
+          <p>
+            Headings, paragraphs, blockquotes, figures, images, and figure
+            captions can all be styled after a class is added to the rich text
+            element using the "When inside of" nested selector system.
+          </p>
+          <h3>Tweet about #AcmeOutdoors products</h3>
+          <a href=""><i class="fa-brands fa-x-twitter"></i>Post</a>
+        </div>
+      </div>
+    </section>
+      <!-- START-FOOTER -->
+      <footer class="footer">
+        <div class="container">
+            <div class="content-foter">
+                <div class="img-icon">
+                <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                alt="">
+                <div class="icon">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                </div>
+                <div class="text-foter">
+                    <p>Made In <span>Webflow</span>. &copy; 2020.</p>
+                </div>
+            </div>
+        </div>
+        <div class="logo-footer">
+            <a href="#" class="loogo-text-bottom">
+                <img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg" alt="logo-footer">
+                <img src="https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg" alt="text-looge-footer">
+              </a>
+        </div>
+      </footer>
+          <!-- java script -->
+          <script>
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector(".mobile-menu");
+            const icons = document.querySelectorAll("i");
+
+            hamburger.addEventListener("click", function (event) {
+                const isVisible = mobileMenu.getAttribute('data-visible');
+                if (isVisible == "true") {
+                    // qari hiding
+                    mobileMenu.setAttribute('data-visible', "false");
+                    icons[0].setAttribute('data-visible', "true");
+                    icons[1].setAttribute('data-visible', "false");
+                } else if (isVisible == "false") {
+                    // soo bandhig showing
+                    mobileMenu.setAttribute('data-visible', "true");
+                    icons[0].setAttribute('data-visible', "false");
+                    icons[1].setAttribute('data-visible', "true");
+                }
+            });
+        </script>
+  </body>
+</html>
