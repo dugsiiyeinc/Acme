@@ -80,8 +80,8 @@ header {
 
 .cont-parent {
   background: #eb5757;
-padding-block: 1.190rem;
-align-content: center;
+  padding-block: 1.19rem;
+  align-content: center;
   position: relative;
 }
 
@@ -95,7 +95,7 @@ align-content: center;
 .nav-links li {
   /* font-size: 16px; */
   font-weight: 400;
- 
+
   margin: 0px 15px;
 }
 
@@ -134,11 +134,10 @@ align-content: center;
   background: #222222;
 }
 
-
-.whiteTent-section{
+.whiteTent-section {
   background-color: #222;
   padding-block: 2.6rem;
-  color:white;
+  color: white;
 }
 .text-tent h1 {
   color: #f9f9f9;
@@ -151,7 +150,7 @@ align-content: center;
 .content-section {
   padding-block: 4.0625rem;
 }
-.prodeuctHeader{
+.prodeuctHeader {
   padding: 2.6rem 0;
 }
 .prodeuct-heading {
@@ -200,7 +199,7 @@ also it is better to make saparate class to give common width and height  */
 }
 .image5 {
   background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e8542198347409e463f436b_jakob-owens-O_bhy3TnSYU-unsplash.jpg")
-  center/cover no-repeat;
+    center/cover no-repeat;
 }
 
 /* ========Donate page images for $100======== */
@@ -212,37 +211,32 @@ also it is better to make saparate class to give common width and height  */
 /* img for $100 */
 .image6 {
   background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85764efc81970066ae6af0_%24100%20Donation%20Image.png")
-  center/cover no-repeat;
+    center/cover no-repeat;
   border-radius: 0.3125rem;
- 
 }
 /* img for $50 */
 .image7 {
   background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85764505cae166f5d57854_%2450%20Donation%20Image.png")
-  center/cover no-repeat;
+    center/cover no-repeat;
   border-radius: 0.3125rem;
- 
 }
 /* img for $25 */
 .image8 {
   background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85763d28ae07cffd40f416_%2425%20Donation%20Image.png")
-  center/cover no-repeat;
+    center/cover no-repeat;
   border-radius: 0.3125rem;
- 
 }
 /* img for $15 */
 .image9 {
   background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e8576358a971384fafd6498_%2415%20Donation%20Image.png")
-  center/cover no-repeat;
+    center/cover no-repeat;
   border-radius: 0.3125rem;
- 
 }
 /* img for $100 */
 .image10 {
   background: url("https://assets.website-files.com/5e853c3383474026e43f2c78/5e85762c8347402c2e405cb7_%245%20Donation%20Image.png")
-  center/cover no-repeat;
+    center/cover no-repeat;
   border-radius: 0.3125rem;
- 
 }
 
 .content-tent h2 {
@@ -432,7 +426,7 @@ input[type="submit"]:hover {
     display: none;
     width: 100%;
   }
-  img{
+  img {
     height: 25px;
   }
   .logo-respon {
@@ -497,7 +491,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: center;
     position: fixed;
-    inset:128px 0 0 0;
+    inset: 128px 0 0 0;
     width: 100%;
     background: #eb5757;
     /* height: 80%; */
@@ -566,7 +560,6 @@ input[type="submit"]:hover {
   .anouncement p span {
     font-size: 0.8rem;
     padding: 3px 20px;
-
   }
 
   .img-icon {
@@ -575,7 +568,7 @@ input[type="submit"]:hover {
     gap: 1.2rem;
     margin-bottom: 2rem;
   }
-  .prodeuctHeader{
+  .prodeuctHeader {
     padding-block: 2.8rem;
   }
   .prodeuct-heading {
@@ -588,7 +581,7 @@ input[type="submit"]:hover {
     background-size: cover;
   }
   .cont-parent {
-    padding-block:2.1rem;
+    padding-block: 2.1rem;
   }
   /* Donate page responseives */
   .donate-img-size {
@@ -603,5 +596,9 @@ input[type="submit"]:hover {
   .donateDollar .dimension-imgs {
     border-radius: 0.3125rem;
   }
-  
+
+  /* Footer responsive  */
+  .loogo-text-bottom img {
+    height: 11px;
+  }
 }
