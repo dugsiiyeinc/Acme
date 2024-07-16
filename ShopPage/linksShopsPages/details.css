@@ -445,7 +445,7 @@ input[type="submit"]:hover {
     padding: 0px 10px;
   }
 
-  .logo a {
+  .logo .logos-btn{
     text-decoration: none;
     color: #f9f9f9;
     background: #222222;

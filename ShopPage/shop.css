@@ -519,7 +519,7 @@ header {
     padding: 0px 10px;
   }
 
-  .logo a {
+  .logo .logos-btn {
     text-decoration: none;
     color: #f9f9f9;
     /* font-size: 20px; */
@@ -527,7 +527,7 @@ header {
     padding: 6px 15px;
     border-radius: 5px;
   }
-
+ 
   .hamburger {
     display: flex;
     justify-content: center;
@@ -671,6 +671,9 @@ header {
   }
   .hero-donate-text p:last-child {
     font-size: 0.8125rem;
+  }
+  .donate-div{
+    width: 95%;
   }
   /* Footer responsiv ------ */
   .loogo-text-bottom img {
