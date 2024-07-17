@@ -1,0 +1,148 @@
+.container{	
+	 background: black;
+	 height: 4.5rem;
+}
+
+.main-container{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+.primary-elert{
+	background-color: #EB5757;
+	border-radius: 20px;
+	padding: 5px 20px;
+	size: 16px;
+	line-height: 24px;
+	weigtht: 400;
+	margin: 10px;
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+	background-color: #EB5757;
+	size: 16px;
+	line-height: 24px;
+	weight: 400;
+}
+
+
+
+ 
+ .navbar .menus-navbar{
+ 	text-decoration: none;
+ }
+
+
+.container{
+
+ background: black;
+	 height: 4.5rem;
+	 color: #;
+	size: 38px;
+	weight: 700;
+	line-height: 44px;
+   padding: 20px 0px;
+
+}
+
+.container-img{
+	display: flex;
+	 height: 75vh;
+	 background: linear-gradient(rgba(152, 151, 151, 0.5), rgba(111, 111, 111, 0.5)), url('https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20(1)%20(1).jpg');;
+    background-position: 0px 0px, 50% 35%;
+        background-size: auto, cover;
+        background-repeat: repeat, no-repeat;
+       
+}
+.heading{
+	size: 38px;
+	line-height: 44px;
+	weight: 700;
+	color: rgb(249,249,249);
+}
+
+.box{
+	display: flex;
+	min-height: 250px;
+	margin-top: 25px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f9f9f9;
+	width: 48%;
+	margin-right: 50px;
+	line-height: 24px;
+	weight: 400;
+	line-height: 16px;
+	margin-bottom: 25px;
+}
+
+
+.btn {
+	background-color: #EB5757;
+	text-decoration: none;
+	padding: 5px 25px;
+	size: 16;
+	font: 16px sen,sans-serif;
+	color:#ffffff;
+	border-radius: 5px;
+}
+.contact-container{
+	display: flex;
+	height: 60vh;
+
+
+}
+
+.contact-form{
+
+   width: 100%;
+  
+
+}
+
+.contact-form h1{
+	weight: 700;
+	size: 32px;
+	line-height: 36px;
+	color: rgb(51, 51, 51);
+}
+   
+ .contact-form div{
+ 	size: 16px;
+ 	weight: 400;
+ 	line-height: 24px;
+ 		color: rgb(51, 51, 51);
+
+ }  
+  
+  
+  #message{
+  	position: relative;
+	margin: 10px 0;
+	height: 44px;
+	width: 100%;
+
+  }
+
+
+
+ footer{
+ 	position: relative;
+ 	bottom: 0;
+ 	width: 100%;
+ 	background-color: #222;
+ 	text-align: center;
+ }
+ 
+ .footer .social-footer{
+ 	position: absolute;
+ }
+
+
+
+ 
