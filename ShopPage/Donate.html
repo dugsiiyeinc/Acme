@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations</title>
+    <link
+    rel="icon"
+    href="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8651e2daefb4744237fd55_Favicon%20-%20Red.png"
+  />
+  <!-- fonts Aweswome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+    <header>
+        <!--start-anouncment-->
+        <div class="anouncement">
+            <p>
+                <a href="/AnnouncmentPage/announ.html"><span>Announcement</span>
+                How we're responding to COVID-19</a>
+            </p>
+        </div>
+  
+        <!--end-anouncment -->
+        <!-- hamburger menu-Responsive -->
+  
+        <div class="cont-parent">
+            <div class="hamburger">
+                <i class="fa-solid fa-bars" data-visible="true"></i>
+                <i class="fa-solid fa-bars bar" data-visible="false"></i>
+            </div>
+            <nav class="container">
+                <div class="menus">
+                    <div class="logo">
+                       <a href="/HomePage/home.html"><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                            alt="logo-page"></a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="/HomePage/home.html">Home</a></li>
+                        <li><a href="/HomePage/About.html">About</a></li>
+                        <li><a href="/ShopPage/shop.html">Shop</a></li>
+                        <li><a href="/ShopPage/Donate.html">Donate</a></li>
+                        <!-- ==================== -->
+                       <!-- LINKS WAAN USOOO LABANAYNAA -->
+                        <!-- ================== -->
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo-respon">
+                <div class="logo">
+                   <a href="/HomePage/home.html"><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                        alt="logo-responsive"></a>
+                    <li><a href="#" class="logos-btn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </div>
+  
+            </div>
+        </div>
+        <!-- Start-Mobile-Menu -->
+        <nav class="mobile-menu" data-visible="false">
+            <div class="navigation">    
+                <div class="menu-link">
+                    <li><a href="/HomePage/home.html">Home</a></li>
+                    <li><a href="/HomePage/About.html">About</a></li>
+                    <li><a href="/ShopPage/shop.html">Shop</a></li>
+                    <li><a href="/ShopPage/Donate.html">Donate</a></li>
+                    <!-- ==================== -->
+                       <!-- LINKS WAAN USOOO LABANAYNAA -->
+                        <!-- ================== -->
+                    <li><a href="#">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+  
+    </header>
+    <section class="Hero-donate">
+        <div class="container hero-donate-text" >
+            <div>
+                <h1>Here at Acme Outdoors</h1>
+            <p>every dollar counts</p>
+            </div>
+            <p>Acme Outdoors is more than just a company, we're a community of people who care for one another and for our city. During this time, due to shelter in place orders, only a select few of our staff are able to work. Any donations you make to Acme will help make sure our employees are cared for and can stay safe in these uncertain times.</p>
+        </div>
+    </section>
+    <!-- Section for link's Donates -->
+     <section class="links-donate-section">
+        <div class="container donate-div">
+            <ul class="linksDonates">
+                <li><a href="DonatePageLinks/donate100.html">Donate $100</a></li>
+                <li><a href="DonatePageLinks/donate50.html">Donate %50</a></li>
+                <li><a href="DonatePageLinks/donate25.html">Donate $25</a></li>
+                <li><a href="DonatePageLinks/donate15.html">Donate $15</a></li>
+                <li><a href="DonatePageLinks/donate5.html">Donate $5</a></li>
+            </ul>
+        </div>
+     </section>
+      <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="content-foter">
+                <div class="img-icon">
+               <a href="/HomePage/home.html"><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                alt=""></a>
+                <div class="icon">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                </div>
+                <div class="text-foter">
+                    <p>Made In <span>Webflow</span>. &copy; 2020.</p>
+                </div>
+            </div>
+        </div>
+        <div class="logo-footer">
+            <a href="#" class="loogo-text-bottom">
+                <img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg" alt="logo-footer">
+                <img src="https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg" alt="text-looge-footer">
+              </a>
+        </div>
+      </footer>
+          <!-- java script -->
+          <script>
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector(".mobile-menu");
+            const icons = document.querySelectorAll("i");
+  
+            hamburger.addEventListener("click", function (event) {
+                const isVisible = mobileMenu.getAttribute('data-visible');
+                if (isVisible == "true") {
+                    // qari hiding
+                    mobileMenu.setAttribute('data-visible', "false");
+                    icons[0].setAttribute('data-visible', "true");
+                    icons[1].setAttribute('data-visible', "false");
+                } else if (isVisible == "false") {
+                    // soo bandhig showing
+                    mobileMenu.setAttribute('data-visible', "true");
+                    icons[0].setAttribute('data-visible', "false");
+                    icons[1].setAttribute('data-visible', "true");
+                }
+            });
+        </script>
+</body>
+</html>
