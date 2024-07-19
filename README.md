@@ -37,7 +37,7 @@ Our mentor for this project is - `Hanad Mohamed Dahir` -.
 - Regular announcements and updates
 
 ## ScreenShot
-![[alt text](image-1.jpeg)](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<img src="image-1.jpeg">
 
 ## FAQ
 
