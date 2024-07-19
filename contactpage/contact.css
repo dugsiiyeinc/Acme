@@ -148,7 +148,10 @@ a{
   margin-left: 2rem;
   align-items: center;
   position: relative;
+<<<<<<< HEAD
   padding: 40px;
+=======
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 .left .boxses{
   display: flex;
@@ -165,10 +168,16 @@ a{
   font-size: 38px;
   font-weight: 700;
   line-height: 44px;
+<<<<<<< HEAD
 
 }
 .boxses .boxs-1{
     margin-top: 4.5rem;
+=======
+}
+.boxses .boxs-1{
+    margin-top: 2.5rem;
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 
 .boxs-1 img{
@@ -232,28 +241,45 @@ a{
 /* START-SECTION-PHONE */
 
 .section-phone{
+<<<<<<< HEAD
   height: 80vh;
   display: flex;
   align-items: center;
   padding-top: 65px;
   padding-bottom: 65;
 
+=======
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 
 .section-phone .flex-phons{
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  gap: 5rem;
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
   align-items: self-start;
 }
 
 .flex-phons .text h3{
+<<<<<<< HEAD
   display: block;
+=======
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
   font-size: 32px;
   font-weight: 700;
   line-height: 36px;
   color: #222;
+<<<<<<< HEAD
    margin-top: 20px;
   margin-bottom: 10px;
+=======
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 
 .flex-phons .text p ,.flex-phons .text .tell p{
@@ -271,17 +297,28 @@ a{
 }
 
 .flex-phns .forms{
+<<<<<<< HEAD
   width: 70%;
 
 }
 
 .flex-phons .forms h2{
   display: block;
+=======
+  width: 100% ;
+}
+
+.flex-phons .forms h2{
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
   font-weight: 700;
   font-size: 32px;
   line-height: 36px;
   color: #222;
+<<<<<<< HEAD
  
+=======
+  margin-block: 10px;
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 
 .flex-phons .forms p{
@@ -298,13 +335,20 @@ a{
   font-weight: 400;
   line-height: 24px;
   color: rgb(51, 51, 51);
+<<<<<<< HEAD
   margin-bottom: 5px;
   font-weight: 400;
+=======
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 
 
 .flex-phons .forms input{
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 800px;
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
   padding: 0.7rem;
   margin-block: 0.6rem;
   border-radius: 7px;
@@ -312,7 +356,10 @@ a{
   border: 1PX solid rgb(51, 51, 51);
   outline: none;
   transition: 0.7s ease;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 .flex-phons .forms input:hover{
   border: none;
@@ -641,17 +688,33 @@ a{
 
 /* START_SECTION_CONTACT */
 .section-phone{
+<<<<<<< HEAD
   margin-block: 4rem;
   padding-bottom: 7rem;
 }
 .section-phone .flex-phons{
   flex-direction: column;
+=======
+  margin-top: 5rem;
+  margin-bottom: 40%;
+  padding: 1rem;
+}
+.section-phone .flex-phons{
+  flex-direction: column;
+  gap: 1rem;
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 .section-phone .flex-phons .text{
   margin-bottom: 3rem;
 }
+<<<<<<< HEAD
 .flex-phns .formso{
   width: 70px;
+=======
+.flex-phons .forms input{
+  width: 390px;
+
+>>>>>>> 3a93b10e3cd4d34256e1339dd63f8f180e6d016a
 }
 /* END_SECTION_CONTACT */
 
