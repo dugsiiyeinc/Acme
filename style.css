@@ -470,12 +470,11 @@ a{
 }
 .text h2 {
   font-size:2.5rem;
-  margin-top0
   
 }
- .content .text p{
-    margin-top: 10px;
-  }
+.content .text p {
+  margin-top: 10px;
+ }
 .content .left img {
   width: 354px;
   height: 440px;
