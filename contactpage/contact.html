@@ -1,100 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>contect</title>
-	 <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8651e2daefb4744237fd55_Favicon%20-%20Red.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="conta.css">
 </head>
 <body>
-
-     <div class="container">
-        <div class="main-container">
-            <div class="primary-elert">Anoucement</div>
-            <div>How we're responding to COVID-19</div>
+    <header>
+        <!--start-anouncment-->
+        <div class="anouncement">
+            <p>
+                <a href="/AnnouncmentPage/announ.html"><span>Announcement</span>
+                    How we're responding to COVID-19</a>
+            </p>
         </div>
 
-        <div class="navbar">
-            <h1 class="heading">Contact Acme Outdoors</h1>
-            <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg" alt="Acme Outdoors Logo">
+        <!--end-anouncment -->
+        <!-- hamburger menu-Responsive -->
 
-            </div>
-                 
-
-
-             <div class="container-img">
-
-              <!-- box 1 -->
-            
-                      <div class="box">
-
-                    <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84ba313e8232516a7da902_chat-alt.svg" alt="" class="contact-icon">
-                 <h2> Contact Us</h2>
-                 <p>Just want to say hi?&nbsp;We'd love to hear from you. We love our customers and community!&nbsp;</p>
-                 <a href="#contact" class="btn w-button">Send Us A Message</a>
-                  </div> 
-                  
-                <div class="box">
-                <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e850414db1f6ebfba8bc42d_chat-warning.svg" alt="" class="contact-icon"><h2>Get Support</h2><p>Have an issue with an order or with a product you purchased from us?&nbsp;Fill out our support form.</p><a href="https://university.webflow.com/support" target="_blank" class="btn w-button">Contact Support</a>
-            </div>
-       
-               
-             </div>
-
-             
-                 <div class="contact-container">
-                     <div>
-                        <h1> Contact Us </h1><br>
-                     Acme Outdoors<br>
-                    123 Rainy Street<br>
-                 Oklahoma City, OK 73129<br>
-                    General Inquiries: (405) 555-5555<br>
-                   Customer Support: (405) 555-5556
-                  </div>
-                     
-                      <div class="contact-form">
-                     
-                        <form action="#" method="post">
-                            <h2>Contact Form</h2>
-          <div>Send us a message and we'll get back to you as soon as we can!</div>
-
-            <div class="form-group">
-                <label for="name">Name:</label><br>
-               <input type="text" placeholder="Enter your name" />
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label><br>
-                <input type="email" placeholder="Enter your Email " />          
-                  </div>
-                       <div class="form-group">
-                <label for="message"> Enter your Message:</label><br>
-          <textarea placeholder="Your message"></textarea>
+        <div class="cont-parent">
+            <div class="hamburger">
+                <i class="fa-solid fa-bars" data-visible="true"></i>
+                <i class="fa-solid fa-bars bar" data-visible="false"></i>
             </div>
 
-              <button type="submit">submit</button>
-        </form>
-        </div>
+            <nav class="container">
+                <div class="menus">
+                    <div class="logo">
+                       <a href="/index.html"><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                            alt="logo-page"></a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="/ShopPage/shop.html">Shop</a></li>
+                        <li><a href="/ShopPage/Donate.html">Donate</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <!-- ===============> -->
+                        <!-- waan usoo labanaynaa link-hga contact iyo cart-->
+                         <!-- <================< -->
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="logo-respon">
+                <div class="logo">
+                   <a href="/index.html" ><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                        alt="logo-responsive"></a>
+                    <li><a href="#" class="logos-btn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </div>
+
+            </div>
 
         </div>
-             
-                 
-                
-       
-         
-                 <footer>
-                    <div><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg" alt="Acme Outdoors Logo"></div>
-                     
+        <!-- Start-Mobile-Menu -->
+        <nav class="mobile-menu" data-visible="false">
+            <div class="navigation">
+                <div class="menu-link">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="/ShopPage/shop.html">Shop</a></li>
+                    <li><a href="/ShopPage/Donate.html">Donate</a></li>
 
-                     <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8407a25b6234aeec960fb9_Twitter_Social_Icon_Rounded_Square_White.svg" width="30" alt="Twitter Logo"> 
-                     <a href="https://www.facebook.com/webflow" class=" social-footer">
-                        <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8407aa3fb6cf5576f1658b_Facebook%20Logo.svg" width="30" alt="Facebook Logo"></a>
-                     <a href="https://www.instagram.com/webflow/" target="_blank" class="social-footer"><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e840774014326b74bbeeeb6_Insta.svg" width="30" alt="Instagram Logo"></a>
-                 </footer>
-             </div>
+                    <li><a href="#">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+<section class="hero-contact">
+  <!-- start-left -->
+  <div class="container left"> 
+    
+    <div class="boxses">
+    <!-- start-boxs-1 -->
+    <h1 class="Aceme">Contact Acme Outdoors</h1>
+     <div class="boxs-1">
+      <img src="	https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84ba313e8232516a7da902_chat-alt.svg" alt="images">
+      <h2>Contact Us</h2>
+      <p>Just want to say hi? We'd love to hear from you. We love our customers and community! </p>
+      <a href="#" class="btn">Send Us A Message</a>
+     </div>
+     
+     <!-- start-boxs-2 -->
+     <div class="boxs-1">
+      <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e850414db1f6ebfba8bc42d_chat-warning.svg">
+      <h2>Get Support</h2>
+      <p>Have an issue with an order or with a product you purchased from us? Fill out our support form.</p>
+      <a href="#" class="btn">Contact Support</a>
+     </div>
+     </div>
+  </div>
+<!-- start-right -->
+<div class="right-images">
+</div>
+</section>
+
+<!-- Start-mobile-menu -->
+<section class="hero-contacts">
+
+     <!-- start-right -->
+  <div class="right-images">
+ </div>
+    <!-- start-left -->
+    <div class="container left"> 
       
-   
-             
-        
-                
-</body>
-</html>
+      <div class="boxses">
+      <!-- start-boxs-1 -->
+      <h1 class="Aceme">Contact Acme Outdoors</h1>
+       <div class="boxs-1">
+        <img src="	https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84ba313e8232516a7da902_chat-alt.svg" alt="images">
+        <h2>Contact Us</h2>
+        <p>Just want to say hi? We'd love to hear from you. We love our customers and community! </p>
+        <a href="#" class="btn">Send Us A Message</a>
+       </div>
+       
+       <!-- start-boxs-2 -->
+       <div class="boxs-1">
+        <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e850414db1f6ebfba8bc42d_chat-warning.svg">
+        <h2>Get Support</h2>
+        <p>Have an issue with an order or with a product you purchased from us? Fill out our support form.</p>
+        <a href="#" class="btn">Contact Support</a>
+       </div>
+       </div>
+    </div>
+  </section>
+<!-- End-mobile-menu -->
+
+<!-- start-contaxt-phone -->
+<secttion class="section-phone">
+    <div class="container flex-phons">
+        <div class="text">
+            <h3>Contact Us</h3> <br>
+            <p>Acme Outdoors</br>
+            123 Rainy Street</br>
+            Oklahoma City, OK 73129</p>
+            <br> <br>
+            <p class="tell">
+                <span>General Inquiries:</span> (405) 555-5555 <br>
+                <span>Customer Support:</span>  (405) 555-5556 
+            </p>
+        </div>
+        <div class="forms">
+            <form action="#">
+                <h2>Contact Form</h2>
+                <p>Send us a message and we'll get back to you as soon as we can!</p>
+                <label for="#">Name</label> <br>
+                <input type="text" placeholder="Enter your name" required> <br>
+                <label for="#">Email Address</label><br>
+                <input type="email" placeholder="Enter your email address" required> <br>
+                <label for="#">Your Message</label> <br>
+                <input type="text" placeholder="Enter your message" required> <br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</secttion>
+
+<!-- End-contaxt-phone -->
+
+
+
+
+
+
+
+
+    <!-- START-FOOTER -->
+<footer class="footer">
+  <div class="container">
+      <div class="content-foter">
+          <div class="img-icon">
+             <a href="/index.html"><img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
+                  alt=""></a>
+              <div class="icon">
+                  <i class="fa-brands fa-square-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+              </div>
+          </div>
+          <div class="text-foter">
+              <p>Made In <span>Webflow</span>. &copy; 2020.</p>
+          </div>
+      </div>
+  </div>
+  <div class="logo-footer">
+      <a href="#" class="loogo-text-bottom">
+          <img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg"
+              alt="logo-footer">
+          <img src="https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg"
+              alt="text-looge-footer">
+      </a>
+  </div>
+</footer>
+<!-- END-FOOTER -->
+
+
+ <!-- java script -->
+  <script>
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector(".mobile-menu");
+            const icons = document.querySelectorAll("i");
+    
+            hamburger.addEventListener("click", function (event) {
+                const isVisible = mobileMenu.getAttribute('data-visible');
+                if (isVisible == "true") {
+                    // qari hiding
+                    mobileMenu.setAttribute('data-visible', "false");
+                    icons[0].setAttribute('data-visible', "true");
+                    icons[1].setAttribute('data-visible', "false");
+                } else if (isVisible == "false") {
+                    // soo bandhig showing
+                    mobileMenu.setAttribute('data-visible', "true");
+                    icons[0].setAttribute('data-visible', "false");
+                    icons[1].setAttribute('data-visible', "true");
+                }
+            });
+  </script>
