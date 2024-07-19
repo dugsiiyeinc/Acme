@@ -12,7 +12,6 @@ body {
 
 header {
   height: 8vh;
-  /* background:#eb5757; */
   position: sticky;
   top: 0px;
   z-index: 10;
