@@ -22,9 +22,11 @@ body {
 .container {
   width: min(100%, 1200px);
   margin-inline: auto;
-   padding-inline: 0.9375rem;img {
+  padding-inline: 0.9375rem;
+}
+img {
   max-width: 100%;
-  }
+}
 /* sytle header*/
 header {
   /* height: 8vh; */
@@ -580,6 +582,9 @@ input[type="submit"]:hover {
   }
   .cont-parent {
     padding-block: 2.1rem;
+  }
+  .hero-section {
+    padding-bottom: 0;
   }
   /* Donate page responseives */
   .donate-img-size {
