@@ -583,6 +583,9 @@ input[type="submit"]:hover {
   .cont-parent {
     padding-block: 2.1rem;
   }
+  .hero-section {
+    padding-bottom: 0;
+  }
   /* Donate page responseives */
   .donate-img-size {
     width: auto;
