@@ -43,7 +43,7 @@
                       <li><a href="/ShopPage/shop.html">Shop</a></li>
                       <li><a href="/ShopPage/Donate.html">Donate</a></li>
                       <li><a href="/contactpage/contact.html">Contact</a></li>
-                      <li><a href="#" class="logos-btn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                      <li><a href="#" class="shoping"><i class="fa-solid fa-cart-shopping"></i><span class="quantity">0</span></a></li>
                   </ul>
               </div>
           </nav>
@@ -76,7 +76,17 @@
       <h1>Shop Our Products</h1>
     </div>
   </div>
-    
+     <!-- ====== Cards  -->
+  <div class="list"></div>
+  <div class="cardd" data-visible="false">
+      <h1>Your Cart</h1>
+      <ul class="listCard"></ul>
+      <div class="checkOut">
+          <div class="total">0</div>
+          <div class="closeShopping">Close</div>
+          <button onclick="cancelOrder()">Cancel Order</button>
+      </div>
+  </div>
     <section class="container content-section">
       <aside class="category">
         <h2>Shop by Category</h2>
@@ -121,25 +131,176 @@
      
     </footer>
         <!-- java script -->
-        <script>
-          const hamburger = document.querySelector('.hamburger');
-          const mobileMenu = document.querySelector(".mobile-menu");
-          const icons = document.querySelectorAll("i");
-
-          hamburger.addEventListener("click", function (event) {
-              const isVisible = mobileMenu.getAttribute('data-visible');
-              if (isVisible == "true") {
-                  // qari hiding
-                  mobileMenu.setAttribute('data-visible', "false");
-                  icons[0].setAttribute('data-visible', "true");
-                  icons[1].setAttribute('data-visible', "false");
-              } else if (isVisible == "false") {
-                  // soo bandhig showing
-                  mobileMenu.setAttribute('data-visible', "true");
-                  icons[0].setAttribute('data-visible', "false");
-                  icons[1].setAttribute('data-visible', "true");
-              }
+        <script >
+          let openShopping = document.querySelector('.shoping');
+      let closeShopping = document.querySelector('.closeShopping');
+      let list = document.querySelector('.list');
+      let listCard = document.querySelector('.listCard');
+      let body = document.querySelector('body');
+      let total = document.querySelector('.total');
+      let quantity = document.querySelector('.quantity');
+      
+      openShopping.addEventListener('click', () => {
+          body.classList.add('active');
+      });
+      closeShopping.addEventListener('click', () => {
+          body.classList.remove('active');
+      });
+      
+      let listCards = [];
+      let products = [
+          {
+              name: "White tent",
+              price: 200.00,
+              // image: '1.jpg'
+          },
+          // {
+          //     name: "Blue Canvas Pack",
+          //     price: 95.00,
+          //     image: '2.jpg'
+          // },
+          // {
+          //     name: "Red Sleeping Bag",
+          //     price: 50.00,
+          //     image: '3.jpg'
+          // }
+      ];
+      
+      function initApp() {
+          // products.forEach((value, key) => {
+          //     let newDiv = document.createElement('div');
+          //     newDiv.classList.add('item');
+          //     newDiv.innerHTML = `
+          //         <img src="image/${value.image}">
+          //         <div class="title">${value.name}</div>
+          //         <div class="price">${value.price.toLocaleString()}</div>
+          //         <button onclick="addToCart(${key}, 1)">Add To Cart</button>`;
+          //     list.appendChild(newDiv);
+          // });
+          loadCart();
+      }
+      
+      // document.getElementById('addToCartForm1').addEventListener('submit', function(event) {
+      //     event.preventDefault();
+      //     let quantity = document.getElementById('quantity1').value;
+      //     addToCart(0, quantity); // 0 is the index for "White Tent"
+      // });
+      
+      // document.getElementById('addToCartForm2')?.addEventListener('submit', function(event) {
+      //     event.preventDefault();
+      //     let quantity = document.getElementById('quantity2').value;
+      //     addToCart(1, quantity); // 1 is the index for "Blue Canvas Pack"
+      // });
+      
+      // document.getElementById('addToCartForm3').addEventListener('submit', function(event) {
+      //     event.preventDefault();
+      //     let quantity = document.getElementById('quantity3').value;
+      //     addToCart(2, quantity); // 2 is the index for "Red Sleeping Bag"
+      // });
+      
+      function addToCart(key, quantity = 1) {
+          let product = products[key];
+          let existingProduct = listCards.find(item => item.name === product.name);
+      
+          if (existingProduct) {
+              existingProduct.quantity += parseInt(quantity);
+          } else {
+              listCards.push({
+                  ...product,
+                  quantity: parseInt(quantity)
+              });
+          }
+      
+          saveCart();
+          updateCart();
+      }
+      
+      function updateCart() {
+          listCard.innerHTML = '';
+          let totalAmount = 0;
+          let itemCount = 0;
+          listCards.forEach((item, index) => {
+              let li = document.createElement('li');
+              li.innerHTML = `
+                  <div><img src="image/${item.image}" /></div>
+                  <div>${item.name}</div>
+                  <div>$${item.price.toLocaleString()} x 
+                      <input type="number" min="1" value="${item.quantity}" onchange="changeQuantity(${index}, this.value)">
+                  </div>
+                  <button onclick="removeItem(${index})">Remove</button>`;
+              listCard.appendChild(li);
+              totalAmount += item.price * item.quantity;
+              itemCount += parseInt(item.quantity);
           });
-      </script>
+          total.innerText = `$${totalAmount.toFixed(2)}`;
+          quantity.innerText = itemCount;
+      }
+      
+      function removeItem(index) {
+          listCards.splice(index, 1);
+          saveCart();
+          updateCart();
+      }
+      
+      function changeQuantity(index, newQuantity) {
+          if (newQuantity <= 0) {
+              removeItem(index);
+          } else {
+              listCards[index].quantity = parseInt(newQuantity);
+              saveCart();
+              updateCart();
+          }
+      }
+      
+      function saveCart() {
+          localStorage.setItem('.shoping', JSON.stringify(listCards));
+      }
+      
+      function loadCart() {
+          let storedCart = localStorage.getItem('.shoping');
+          if (storedCart) {
+              listCards = JSON.parse(storedCart);
+              updateCart();
+          }
+      }
+      
+      function cancelOrder() {
+          listCards = [];
+          saveCart();
+          updateCart();
+          body.classList.remove('active');
+      }
+      
+      
+      
+      // initApp();
+      
+      
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const icons = document.querySelectorAll("i");
+      
+      hamburger.addEventListener("click", function(event) {
+          const isVisible = mobileMenu.getAttribute('data-visible');
+          if (isVisible == "true") {
+              mobileMenu.setAttribute('data-visible', "false");
+              icons[0].setAttribute('data-visible', "true");
+              icons[1].setAttribute('data-visible', "false");
+          } else if (isVisible == "false") {
+              mobileMenu.setAttribute('data-visible', "true");
+              icons[0].setAttribute('data-visible', "false");
+              icons[1].setAttribute('data-visible', "true");
+          }
+      });
+      
+      // For test 
+      // hamburger.addEventListener("click", function (event){
+      //     console.log("active")
+      // })
+      
+      initApp();
+      
+      
+        </script>
   </body>
 </html>
