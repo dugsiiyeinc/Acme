@@ -277,7 +277,7 @@ button{
 }
 /* Style Hero section */
 .hero-section {
-  padding-block: 4.0625rem;
+  padding-block: 0 4.0625rem;
 }
 .hero {
   background: linear-gradient(rgba(34, 33, 34, 0.299), rgba(34, 34, 33, 0.737)),
@@ -764,6 +764,9 @@ button{
   .anouncement p span {
     font-size: 0.8rem;
     padding: 3px 20px;
+  }
+  .hero-section {
+    padding-bottom: 0;
   }
 
   .img-icon {

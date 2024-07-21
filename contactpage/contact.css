@@ -359,7 +359,7 @@ button{
   height: 60vh;
   display: flex;
   align-items: center;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 .section-phone .flex-phons{
