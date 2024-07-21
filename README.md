@@ -1,7 +1,5 @@
 # E-commerce Website
->>>>>>> 1ee572c05095d6a5787a6b475974320de7902e15
 Welcome to our E-commerce project This website is designed to offer a seamless online shopping experience, featuring various sections such as Home, Contact, About, Shop, Announcements, and Donations. Our aim is to create an intuitive and user-friendly platform for customers to browse and purchase products effortlessly.
-
 ## Project Overview 
 
 
@@ -61,7 +59,7 @@ A: Use the "Contact" section to reach out to us with any questions or issues you
 | Secondary  Color | ![#333333](https://via.placeholder.com/10/f8f8f8?text=+) #333333 |
 | Background Color | ![#eb5757](https://via.placeholder.com/10/00b48a?text=+) #eb5757 |
 | Text       Color | ![#222222](https://via.placeholder.com/10/00b48a?text=+) #222222 |
->>>>>>> 1ee572c05095d6a5787a6b475974320de7902e15
+
 
 
 ## Acknowledgements
@@ -84,7 +82,7 @@ We would like to express our gratitude to the following individuals and organiza
 ## Special Thanks 
 *Vercel App Hosting Services*: For providing hosting solutions that helped us test and deploy our website.
 *All Mentors*: For their invaluable guidance and support throughout the project.
->>>>>>> 1ee572c05095d6a5787a6b475974320de7902e15
+
 
 ## Tech Used
 
