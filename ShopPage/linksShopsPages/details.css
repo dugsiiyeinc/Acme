@@ -93,7 +93,7 @@ header {
   left: 100%;
   width: 500px;
   background-color: #f2f0ef;
-  height: 90vh;
+  height: 95vh;
   transition: 0.5s;
   z-index: 4444;
   
@@ -153,12 +153,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  margin:9px 9px;
-  
+  /* margin:9px 9px; */
+  gap: 0.8rem;
+  font-size: 1rem;
 }
 .listCard li img{
-  width: 100%;
+  max-width: 100%;
+    height: 50px;
 }
 .listCard li button{
   background-color: #dacece55;
