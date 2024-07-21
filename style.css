@@ -465,8 +465,8 @@ button{
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)););
+  gap: 3rem;
 }
 .product-1 .common-imgs {
   width: 23.6875rem;
@@ -956,7 +956,37 @@ background-color:#222;
 .logo-respon {
   display: none;
 }
-@media (max-width: 780px) {
+@media (max-width: 991px){
+  .products {
+    gap:0.8rem;
+  }
+  .product-1 .common-imgs {
+  width: 22.6875rem;
+  height: 31.25rem;
+  border-radius: 0.625rem;
+}
+
+  .footer {
+    width:100%;
+  }
+  .content {
+    width: 95;
+    left: 150px;
+    padding-block: 2.1rem;
+}
+  .content .left {
+    width: 351px;
+    min-height: 500px;
+    /* position: absolute; */
+    /* left: -20%; */
+    /* background: url(https://assets.website-files.com/5e7ff3e…/5e83fe3…_christiann-koepke-dQyS2pMYtok-unsplash%20(1).jpg); */
+    /* background-position: 69% 80%; */
+    /* background-size: 270%; */
+    /* border-radius: 7px; */
+    /* background-repeat: no-repeat; */
+}
+}
+@media (max-width: 767px) {
   header .menus {
     display: none;
     width: 100%;
