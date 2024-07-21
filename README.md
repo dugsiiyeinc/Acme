@@ -39,7 +39,7 @@ Our mentor for this project is - `Hanad Mohamed Dahir` -.
 
 
 ## ScreenShot
-<img src="image-1.jpeg">
+<img src="image-1.jpeg" width=200 height=200>
 
 
 ## FAQ
