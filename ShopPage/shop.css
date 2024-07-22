@@ -656,13 +656,15 @@ button{
     padding: 0px 10px;
   }
 
-  .logo .logos-btn {
+  .logos-btn {
     text-decoration: none;
     color: #f9f9f9;
-    /* font-size: 20px; */
     background: #222222;
     padding: 6px 15px;
     border-radius: 5px;
+    position: absolute;
+    right: 100px;
+    top: 30px;
   }
  
   .hamburger {
@@ -820,4 +822,12 @@ button{
   .loogo-text-bottom img {
     height: 11px;
   }
+   /* CArt  */
+   .cardd {
+    height:90vh;
+    width:100%;
+  }
+  .active .cardd {
+  left: calc(100% - 390px);
+}
 }

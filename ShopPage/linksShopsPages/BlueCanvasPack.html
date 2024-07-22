@@ -31,8 +31,8 @@
 
       <div class="cont-parent">
           <div class="hamburger">
-              <i class="fa-solid fa-bars" data-visible="true"></i>
-              <i class="fa-solid fa-bars bar" data-visible="false"></i>
+              <i class="fa-solid hum fa-bars" data-visible="true"></i>
+              <i class="fa-solid hum fa-bars bar" data-visible="false"></i>
           </div>
           <nav class="container">
               <div class="menus">
@@ -54,9 +54,10 @@
               <div class="logo">
                   <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"
                       alt="">
-                      <li><a href="#" class="logos-btn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                      
               </div>
-
+              <div ><a href="#" class="shoping logos-btn"><i class="fa-solid fa-cart-shopping"></i><span
+                class="quantity">0</span></a></div>
           </div>
       </div>
       <!-- Start-Mobile-Menu -->
@@ -81,7 +82,7 @@
     <!-- ====== Cards  -->
   <div class="list"></div>
   <div class="cardd" data-visible="false">
-      <h1>Your Cart</h1>
+      <h1>Product Items</h1>
       <ul class="listCard"></ul>
       <div class="checkOut">
           <div class="total">0</div>
@@ -155,7 +156,7 @@
     </footer>
         <!-- java script -->
         <script >
-          let openShopping = document.querySelector('.shoping');
+          let openShopping = document.querySelectorAll('.shoping');
       let closeShopping = document.querySelector('.closeShopping');
       let list = document.querySelector('.list');
       let listCard = document.querySelector('.listCard');
@@ -163,12 +164,19 @@
       let total = document.querySelector('.total');
       let quantity = document.querySelector('.quantity');
       
-      openShopping.addEventListener('click', () => {
-          body.classList.add('active');
-      });
-      closeShopping.addEventListener('click', () => {
-          body.classList.remove('active');
-      });
+      openShopping[0].addEventListener('click', () => {
+        console.log('clicked');
+            body.classList.add('active');
+            console.log('Am here')
+        });
+        openShopping[1].addEventListener('click', () => {
+        console.log('clicked');
+            body.classList.add('active');
+            console.log('Am here')
+        });
+        closeShopping.addEventListener('click', () => {
+            body.classList.remove('active');
+        });
       
       let listCards = [];
       let products = [
@@ -301,7 +309,7 @@
       
       const hamburger = document.querySelector('.hamburger');
       const mobileMenu = document.querySelector(".mobile-menu");
-      const icons = document.querySelectorAll("i");
+      const icons = document.querySelectorAll("hum");
       
       hamburger.addEventListener("click", function(event) {
           const isVisible = mobileMenu.getAttribute('data-visible');

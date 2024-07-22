@@ -572,12 +572,15 @@ textarea:focus, input:focus {
       padding: 0px 10px;
     }
   
-    .logo .logos-btn{
+    .logos-btn{
       text-decoration: none;
       color: #f9f9f9;
       background: #222222;
       padding: 6px 15px;
       border-radius: 5px;
+      position: absolute;
+      right: 100px;
+      top: 30px;
     }
   
   
@@ -813,5 +816,12 @@ textarea:focus, input:focus {
   height: 11px;
 }
   /* END-footer */
+  .cardd {
+    height:90vh;
+    width:100%;
+  }
+  .active .cardd {
+  left: calc(100% - 390px);
+}
 
 }
