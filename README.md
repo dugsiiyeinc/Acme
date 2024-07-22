@@ -93,6 +93,6 @@ To deploy this project run
 
 ```bash
 
-https://e-commerce-swart-ten.vercel.app
+https://acme-lake.vercel.app/
 ```
 
