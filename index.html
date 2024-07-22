@@ -157,13 +157,17 @@
       <!-- ====== Cards  -->
   <div class="list"></div>
   <div class="cardd" data-visible="false">
-      <h1>Product Items </h1>
-      <ul class="listCard"></ul>
-      <div class="checkOut">
-          <div class="total">0</div>
-          <div class="closeShopping">Close</div>
-          <button onclick="cancelOrder()">Cancel Order</button>
-      </div>
+    <h1>Product items</h1>
+    <ul class="listCard"></ul>
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+      <button onclick="cancelOrder()">Cancel Order</button>
+      <button id="submitOrderButton">Submit Order</button>
+    </div>
+    <div id="confirmationMessage" class="hidden">
+      Your items have been submitted successfully!
+    </div>
   </div>
 
     <!-- star-products -->
@@ -417,7 +421,21 @@
     
     
     // initApp();
-    
+    document.getElementById('submitOrderButton').addEventListener('click', function() {
+    // Show the confirmation message
+    const confirmationMessage = document.getElementById('confirmationMessage');
+    confirmationMessage.classList.remove('hidden');
+
+    // Clear the cart
+    listCards = [];
+    saveCart();
+    updateCart();
+
+    // Remove the confirmation message after 6 seconds
+    setTimeout(() => {
+        confirmationMessage.classList.add('hidden');
+    }, 6000);
+});
     
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector(".mobile-menu");
