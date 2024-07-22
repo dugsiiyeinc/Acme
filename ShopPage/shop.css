@@ -711,7 +711,8 @@ button{
     /* height: 80%; */
     text-align: center;
     transform: translateX(0%);
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+      z-index: 111;
   }
 
   .navigation {
@@ -914,7 +915,8 @@ button{
     width: 100%;
     text-align: center;
     transform: translateX(0%);
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    z-index: 111;
   }
 
   .navigation {

@@ -76,22 +76,23 @@
   <!-- start-left -->
   <div class="container left"> 
     
-    <div class="boxses">
+    <div class="boxses-parent">
     <!-- start-boxs-1 -->
     <h1 class="Aceme">Contact Acme Outdoors</h1>
+    <div class="boxses">
      <div class="boxs-1">
       <img src="	https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84ba313e8232516a7da902_chat-alt.svg" alt="images">
       <h2>Contact Us</h2>
       <p>Just want to say hi? We'd love to hear from you. We love our customers and community! </p>
       <a href="#" class="btn">Send Us A Message</a>
      </div>
-     
      <!-- start-boxs-2 -->
      <div class="boxs-1">
       <img src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e850414db1f6ebfba8bc42d_chat-warning.svg">
       <h2>Get Support</h2>
       <p>Have an issue with an order or with a product you purchased from us? Fill out our support form.</p>
       <a href="#" class="btn">Contact Support</a>
+     </div>
      </div>
      </div>
   </div>
@@ -108,10 +109,10 @@
  </div>
     <!-- start-left -->
     <div class="container left"> 
-      
+        <h1 class="Aceme">Contact Acme Outdoors</h1>
       <div class="boxses">
       <!-- start-boxs-1 -->
-      <h1 class="Aceme">Contact Acme Outdoors</h1>
+      
        <div class="boxs-1">
         <img src="	https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84ba313e8232516a7da902_chat-alt.svg" alt="images">
         <h2>Contact Us</h2>
@@ -348,7 +349,7 @@ function cancelOrder() {
 
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector(".mobile-menu");
-const icons = document.querySelectorAll("hum");
+const icons = document.querySelectorAll(".hum");
 
 hamburger.addEventListener("click", function(event) {
     const isVisible = mobileMenu.getAttribute('data-visible');
