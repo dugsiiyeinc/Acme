@@ -790,12 +790,10 @@ textarea:focus, input:focus {
   margin-bottom: 3rem;
 }
 
-.forms input{
-  min-width: 830px;
-}
+
 
 .forms input,textarea{
-  width: 100%;
+  width: 700px;
   /* display: block; */
   padding: 1rem 0.8rem;
 }
@@ -835,6 +833,7 @@ textarea:focus, input:focus {
   .active .cardd {
   left: calc(100% - 390px);
 }
+  
 
 }
   @media (max-width: 500px) {
@@ -991,57 +990,31 @@ textarea:focus, input:focus {
     grid-template-columns: 1fr;
   }
 
-  
-.left{
-  height: 90%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  background: #222;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
-  padding-block: 5rem;
-  margin-left: -0.1rem;
-}
+  .boxses {
+    position: static;
+  }
+
 .left .boxses{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   /* margin-top: -1rem; */
-  height: 100%;
+  /* height: 100%; */
   /* padding-bottom: 2rem; */
-}
-.Aceme {
-  text-align: left;
-  margin-bottom: -4rem;
-  position: relative;
-  margin-left: -3.5rem;
-  font-size: 2.5rem;
-  line-height: 2.7rem;
-}
-
-.left .boxses .boxs-1{
-    width: 100%;
-    min-height: 350px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* margin-right: 2rem; */
-}
- /* .boxses h1{
-  color: #fff;
   position: static;
-  /* width: 70%; */
-  /* font-size: 36px;
-  font-weight: 700; */
-  /* margin-left: -9rem; */
-/* } */
-.boxses .boxs-1{
-    margin-top: 2.5rem;
+}
+.left .boxses .boxs-1{
+  padding-block: 3rem;
+}
+.boxs-1 img {
+  margin-top: 0;
+}
+.Aceme{
+
+  top: 0%;
+  left: 2%;
+  margin-left: 0;
 }
 .right-images{
   height: 28rem;
@@ -1051,19 +1024,6 @@ textarea:focus, input:focus {
   background-repeat: repeat, no-repeat;
   width: 100%;
 }
-
-.left .boxs-1{
-    width: 200px;
-    /* height: 350px; */
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 7px;
-}
-
 /* START_SECTION_CONTACT */
 .section-phone{
   margin-top: 5rem;
@@ -1077,11 +1037,9 @@ textarea:focus, input:focus {
 .section-phone .flex-phons .text{
   margin-bottom: 3rem;
 }
-
-
 .forms input,textarea{
   width: 100%;
-  /* display: block; */
+  display: block;
   padding: 1rem 0.8rem;
 }
 textarea:hover, input:hover{
